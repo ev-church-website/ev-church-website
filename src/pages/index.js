@@ -1,9 +1,10 @@
-import React from 'react'
-import Link from 'gatsby-link'
+import React from 'react';
+import Link from 'gatsby-link';
+import Container from '../components/Container';
 
 export default () =>
-<div style={{ margin: '3rem auto', maxWidth: 600 }}>
+<Container>
   <h1>Eagle Valley Church of Christ</h1>
-  <p>What a world.</p>
+  <h3>Bible based worship and study.</h3>
   <Link to="/page-2">Link</Link>
-</div>
+</Container>
