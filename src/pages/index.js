@@ -1,10 +1,9 @@
 import React from 'react';
 import Link from 'gatsby-link';
-import Container from '../components/Container';
+import { containerStyle } from "../styles/base";
 
 export default () =>
-<Container>
-  <h1>Eagle Valley Church of Christ</h1>
+<div css={containerStyle}>
   <h3>Bible based worship and study.</h3>
   <Link to="/page-2">Link</Link>
-</Container>
+</div>
