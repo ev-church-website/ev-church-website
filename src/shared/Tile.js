@@ -4,7 +4,7 @@ export default (props) =>
 
 <div css={{
   padding: '1rem',
-  minWidth: '400px',
+  minWidth: '300px',
   flex: '1 1 ' + props.width,
 }}>
 

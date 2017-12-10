@@ -2,28 +2,32 @@ import React from 'react';
 import Link from 'gatsby-link';
 import { containerStyle } from '../styles/base';
 import Tile from '../shared/Tile.js';
-import ScriptureLink from "../shared/ScriptureLink";
+import ScriptureLink from '../shared/ScriptureLink.js';
+import SectionHeading from '../shared/SectionHeading.js';
+import congregation from '../../static/congregation.jpg';
 
 export default () =>
-<div css={containerStyle}>
+<div>
 
-  <div css={{
-    fontSize: '2rem',
-    height: '200px',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center'
-  }}>
 
-    intro image
+  <div>
+
+    <div css={[{}, containerStyle]}>
+
+      <img src={congregation} />
+
+    </div>
 
   </div>
 
 
-  <div css={{
+  <SectionHeading>ABOUT US</SectionHeading>
+
+
+  <div css={[{
     display:'flex',
     flexWrap:'wrap'
-  }}>
+  },containerStyle]}>
 
     <Tile title="Our Mission and Approach" width="50%">
       Our goal, our motive, and our underlying reason for everything we do is to please God.
@@ -51,5 +55,16 @@ export default () =>
     </Tile>
 
   </div>
+
+
+  <SectionHeading>JOIN US</SectionHeading>
+
+  <div css={{
+    height: '300px'
+  }}>
+
+
+  </div>
+
 
 </div>

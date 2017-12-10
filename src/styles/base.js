@@ -1,5 +1,5 @@
 
 export const containerStyle = {
-  maxWidth: 980,
+  maxWidth: 940,
   margin: '0 auto',
 };

@@ -1,7 +1,22 @@
 
+== Bugs ==
+
+- missing content from about us page (first section)
+- img has a bottom margin by default?
 
 
-Use both css and className for existing
+== Features ==
+
+- Bible verse hovering or fill out the rest of the lookup map
+- work on the opening image
+  - right now it's centered only because the maxWidth is set the the same value
+  - maybe a fade?
+  - compress?
 
 
-Bible verse hovering or fill out the rest of the lookup map
+== Gatsby Questions ==
+
+- How much should I try to optimize the css prop?
+  - Use both css and className for instead of using array syntax on css prop?
+
+
