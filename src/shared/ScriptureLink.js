@@ -2,8 +2,8 @@ import PropTypes from 'prop-types';
 
 const propTypes = {
   book: PropTypes.string.isRequired,
-  chapter: PropTypes.number.isRequired,
-  verse: PropTypes.number.isRequired,
+  chapter: PropTypes.string.isRequired,
+  verse: PropTypes.string.isRequired,
 };
 
 
