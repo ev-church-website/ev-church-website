@@ -56,12 +56,49 @@ export default () =>
 
   </div>
 
-
-  <SectionHeading>JOIN US</SectionHeading>
-
   <div css={{
-    height: '300px'
+    backgroundColor: '#eee',
+    marginTop: '3rem'
   }}>
+
+
+    <SectionHeading>JOIN US</SectionHeading>
+
+
+    <div css={[{
+      display:'flex',
+      flexWrap:'wrap'
+    },containerStyle]}>
+
+
+      <Tile title="When?" width="50%">
+
+        <div css={{
+          fontSize: '1.5rem'
+        }}>
+
+          Sunday Morning 9:00 am<br /><br />
+          Sunday Evening 6:00 pm<br /><br />
+          Wednesday Evening 7:00 pm<br /><br />
+
+        </div>
+
+      </Tile>
+
+      <Tile title="Where?" width="50%">
+
+        8465 Crawfordsville Rd
+        <br />
+        Indianapolis, IN 46234
+
+        <br />
+        <br />
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3064.8286554366746!2d-86.3138409487439!3d39.81083510008708!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x886ca910b9db3395%3A0x64efa476da220592!2sEagle+Valley+Church+of+Christ!5e0!3m2!1sen!2sus!4v1512880124863" width="400" height="300" frameBorder="0" style={{border:0}} allowFullScreen></iframe>
+
+      </Tile>
+
+    </div>
 
 
   </div>
