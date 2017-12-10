@@ -6,7 +6,7 @@ export default ({ children }) =>
 
   <div style={{backgroundColor: 'green'}}>
 
-    <header css={[{padding: '1rem 0 1rem 0', color: 'white', fontSize: '1.5rem'}, containerStyle]}>
+    <header css={[{padding: '1rem', color: 'white', fontSize: '1.5rem'}, containerStyle]}>
 
       Eagle Valley
       Church of Christ
