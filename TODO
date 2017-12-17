@@ -1,16 +1,17 @@
 
 
-== examples ==
-
-http://southboonechurch.org/
-
-
-
 == Bugs ==
 
+
+
+== Content ==
+
+- Missions and Outreach
+- Classes
+- Sermons
+- Contact Us
 - missing content from about us page (first section)
-- img has a bottom margin by default?
-- copyright year not dynamic
+  - could we condense this?
 
 
 == Features ==
@@ -18,9 +19,17 @@ http://southboonechurch.org/
 - Bible verse hovering or fill out the rest of the lookup map
 - work on the opening image
   - right now it's centered only because the maxWidth is set the the same value
-  - maybe a fade?
+  - maybe a faded border?
   - compress?
+- it feels like something is missing at the top
 
+
+
+
+
+== examples ==
+
+http://southboonechurch.org/
 
 == Gatsby Questions ==
 

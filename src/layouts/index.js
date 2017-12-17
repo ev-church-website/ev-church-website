@@ -23,13 +23,12 @@ export default ({ children }) =>
 
   <div css={{
     backgroundColor: '#8a9eab',
-    marginTop: '2rem',
     padding: '.5rem'
   }}>
 
     <header css={[{color: 'white'}, containerStyle]}>
 
-      © 2017 Eagle Valley Church of Christ
+      © {(new Date()).getFullYear()} Eagle Valley Church of Christ
 
     </header>
 

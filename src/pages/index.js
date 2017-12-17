@@ -14,7 +14,7 @@ export default () =>
 
     <div css={[{}, containerStyle]}>
 
-      <img src={congregation} />
+      <img css={{marginBottom: 0}} src={congregation} />
 
     </div>
 
@@ -74,12 +74,25 @@ export default () =>
       <Tile title="When?" width="50%">
 
         <div css={{
-          fontSize: '1.5rem'
+          fontSize: '1.25rem',
+          margin: '1rem auto',
+          textAlign: 'left',
+          maxWidth: '200px'
         }}>
 
-          Sunday Morning 9:00 am<br /><br />
-          Sunday Evening 6:00 pm<br /><br />
-          Wednesday Evening 7:00 pm<br /><br />
+          <div css={{fontWeight: 'bold'}}>Sunday Morning</div>
+          <div>9:00am - Bible Study</div>
+          <div>10:00am - Worship</div>
+
+          <br />
+
+          <div css={{fontWeight: 'bold'}}>Sunday Evening</div>
+          <div>6:00pm - Worship</div>
+
+          <br />
+
+          <div css={{fontWeight: 'bold'}}>Wednesday Evening</div>
+          <div>7:00pm - Bible Study</div>
 
         </div>
 
@@ -87,12 +100,14 @@ export default () =>
 
       <Tile title="Where?" width="50%">
 
-        8465 Crawfordsville Rd
-        <br />
-        Indianapolis, IN 46234
 
-        <br />
-        <br />
+        <div css={{fontSize: '1.25rem', margin: '1rem'}}>
+
+          8465 Crawfordsville Rd
+          <br />
+          Indianapolis, IN 46234
+
+        </div>
 
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3064.8286554366746!2d-86.3138409487439!3d39.81083510008708!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x886ca910b9db3395%3A0x64efa476da220592!2sEagle+Valley+Church+of+Christ!5e0!3m2!1sen!2sus!4v1512880124863" width="300" height="300" frameBorder="0" style={{border:0}} allowFullScreen></iframe>
 
