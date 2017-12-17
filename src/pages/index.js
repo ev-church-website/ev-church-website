@@ -33,6 +33,7 @@ export default () =>
       Our goal, our motive, and our underlying reason for everything we do is to please God.
       Because it is only through His word that we can know what is truly pleasing to Him, you will find that we stress
       the importance of diligent Bible study on a consistent and ongoing basis.
+      <br />
       (<ScriptureLink book="2 Corinthians" chapter="5" verse="9" />, &nbsp;
       <ScriptureLink book="Colossians" chapter="1" verse="9-10"/>)
     </Tile>
