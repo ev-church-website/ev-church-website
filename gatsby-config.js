@@ -7,5 +7,11 @@ module.exports = {
       }
     },
     'gatsby-plugin-glamor',
+    {
+      resolve: 'gatsby-plugin-google-analytics',
+      options: {
+        trackingId: 'UA-69196237-2'
+      }
+    },
   ],
 };
