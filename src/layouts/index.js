@@ -1,8 +1,15 @@
 import React from 'react';
 import { containerStyle } from '../styles/base';
+import { Helmet } from 'react-helmet';
 
 export default ({ children }) =>
 <div css={{ margin: '0 auto'}}>
+
+  <Helmet>
+
+    <title>Eagle Valley Church of Christ</title>
+
+  </Helmet>
 
   <div css={{backgroundColor: '#8a9eab'}}>
 

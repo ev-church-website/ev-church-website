@@ -5,9 +5,28 @@ import Tile from '../shared/Tile.js';
 import ScriptureLink from '../shared/ScriptureLink.js';
 import SectionHeading from '../shared/SectionHeading.js';
 import congregation from '../../static/congregation.jpg';
+import { Helmet } from 'react-helmet';
 
 export default () =>
 <div>
+
+  <Helmet>
+
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+  </Helmet>
+
+  <script dangerouslySetInnerHTML={{ __html:
+    `if (window.netlifyIdentity) {
+		  window.netlifyIdentity.on("init", user => {
+			  if (!user) {
+				  window.netlifyIdentity.on("login", () => {
+					  document.location.href = "/admin/";
+				  });
+			  }
+		  });
+	  }`
+  }}/>
 
 
   <div>
