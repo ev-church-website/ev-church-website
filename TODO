@@ -17,12 +17,7 @@
 == Features ==
 
 - Netlify CMS
-  - enabled entity provider and received invite email
-  - the redirect on the main page isn't working
-  - google auth gives a js error so I've disabled for now
-  - I was able to create an account with password auth
-
-
+  - setup content
 - Bible verse hovering or fill out the rest of the lookup map
 - work on the opening image
   - right now it's centered only because the maxWidth is set the the same value
