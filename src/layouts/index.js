@@ -1,6 +1,8 @@
 import React from 'react';
 import * as BaseClasses from '../styles/BaseClasses';
 import { Helmet } from 'react-helmet';
+import HeaderLink from '../shared/HeaderLink';
+import Colors from '../styles/Colors';
 
 export default ({ children }) =>
 <div css={{ margin: '0 auto'}}>
@@ -11,24 +13,31 @@ export default ({ children }) =>
 
   </Helmet>
 
-  <div css={{backgroundColor: '#8a9eab'}}>
+  <div css={{backgroundColor: Colors.primaryBackground}}>
 
     <header className={`${BaseClasses.container}`} css={{
       padding: '1rem',
       color: 'white',
-      fontSize: '1.5rem'
+      display: 'flex',
+      justifyContent: 'space-between',
     }}>
 
-      <div>
+      <div css={{fontSize: '1.5rem'}}>
 
         Eagle Valley
         Church of Christ
 
       </div>
 
-      <div>
+      <div css={{display: 'flex'}}>
 
+        <HeaderLink to="/events">
+          EVENTS
+        </HeaderLink>
 
+        <HeaderLink to="/contact">
+          CONTACT
+        </HeaderLink>
 
       </div>
 
@@ -43,7 +52,7 @@ export default ({ children }) =>
   </div>
 
   <div css={{
-    backgroundColor: '#8a9eab',
+    backgroundColor: Colors.primaryBackground,
     padding: '.5rem'
   }}>
 

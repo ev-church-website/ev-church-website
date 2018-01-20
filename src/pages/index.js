@@ -6,6 +6,7 @@ import ScriptureLink from '../shared/ScriptureLink.js';
 import SectionHeading from '../shared/SectionHeading.js';
 import congregation from '../../static/congregation.jpg';
 import Script from 'react-load-script';
+import Colors from '../styles/Colors';
 
 export default class Index extends React.Component {
 
@@ -86,7 +87,7 @@ export default class Index extends React.Component {
         </div>
 
         <div css={{
-          backgroundColor: '#eee',
+          backgroundColor: Colors.grayBackground,
           marginTop: '3rem'
         }}>
 
