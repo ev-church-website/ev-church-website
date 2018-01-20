@@ -11,6 +11,8 @@ export default class Index extends React.Component {
 
   handleNetlifyIdentityLoad() {
 
+    console.log('in load handler');
+
     if (window.netlifyIdentity) {
       window.netlifyIdentity.on("init", user => {
         if (!user) {
@@ -21,8 +23,7 @@ export default class Index extends React.Component {
       });
     }
 
-    //FIXME: do we need this?
-    //window.netlifyIdentity.init();
+    window.netlifyIdentity.init();
   }
 
   render() {
