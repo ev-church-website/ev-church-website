@@ -8,6 +8,7 @@
 
 - Missions and Outreach
 - Classes
+- Events
 - Sermons
 - Contact Us
 - missing content from about us page (first section)
@@ -24,18 +25,3 @@
   - maybe a faded border?
   - compress?
 - it feels like something is missing at the top
-
-
-
-
-
-== examples ==
-
-http://southboonechurch.org/
-
-== Gatsby Questions ==
-
-- How much should I try to optimize the css prop?
-  - Use both css and className for instead of using array syntax on css prop?
-
-

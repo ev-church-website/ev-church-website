@@ -1,5 +1,5 @@
 import React from 'react';
-import { containerStyle } from '../styles/base';
+import * as BaseClasses from '../styles/BaseClasses';
 import { Helmet } from 'react-helmet';
 
 export default ({ children }) =>
@@ -13,10 +13,24 @@ export default ({ children }) =>
 
   <div css={{backgroundColor: '#8a9eab'}}>
 
-    <header css={[{padding: '1rem', color: 'white', fontSize: '1.5rem'}, containerStyle]}>
+    <header className={`${BaseClasses.container}`} css={{
+      padding: '1rem',
+      color: 'white',
+      fontSize: '1.5rem'
+    }}>
 
-      Eagle Valley
-      Church of Christ
+      <div>
+
+        Eagle Valley
+        Church of Christ
+
+      </div>
+
+      <div>
+
+
+
+      </div>
 
     </header>
 
@@ -33,7 +47,7 @@ export default ({ children }) =>
     padding: '.5rem'
   }}>
 
-    <header css={[{color: 'white'}, containerStyle]}>
+    <header className={`${BaseClasses.container}`} css={{color: 'white'}}>
 
       © {(new Date()).getFullYear()} Eagle Valley Church of Christ
 

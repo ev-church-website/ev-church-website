@@ -1,9 +1,9 @@
 import React from 'react';
 import Link from 'gatsby-link';
-import { containerStyle } from "../styles/base";
+import * as BaseClasses from '../styles/BaseClasses';
 
 export default () =>
-<div css={containerStyle}>
+<div className={`${BaseClasses.container}`}>
   <h1>Second Page</h1>
   <Link to="/">back home</Link>
 </div>

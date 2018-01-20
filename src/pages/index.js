@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'gatsby-link';
-import { containerStyle } from '../styles/base';
+import * as BaseClasses from '../styles/BaseClasses';
 import Tile from '../shared/Tile.js';
 import ScriptureLink from '../shared/ScriptureLink.js';
 import SectionHeading from '../shared/SectionHeading.js';
@@ -40,7 +40,7 @@ export default class Index extends React.Component {
 
         <div>
 
-          <div css={[{}, containerStyle]}>
+          <div className={`${BaseClasses.container}`}>
 
             <img css={{marginBottom: 0}} src={congregation} />
 
@@ -52,10 +52,10 @@ export default class Index extends React.Component {
         <SectionHeading>ABOUT US</SectionHeading>
 
 
-        <div css={[{
+        <div className={`${BaseClasses.container}`} css={{
           display:'flex',
           flexWrap:'wrap'
-        },containerStyle]}>
+        }}>
 
           <Tile title="Our Mission and Approach" width="50%">
             Our goal, our motive, and our underlying reason for everything we do is to please God.
@@ -94,10 +94,10 @@ export default class Index extends React.Component {
           <SectionHeading>JOIN US</SectionHeading>
 
 
-          <div css={[{
+          <div className={`${BaseClasses.container}`} css={{
             display:'flex',
             flexWrap:'wrap'
-          },containerStyle]}>
+          }}>
 
 
             <Tile title="When?" width="50%">
