@@ -15,6 +15,7 @@
     "gatsby-plugin-typography": "^1.7.10",
     "prop-types": "^15.6.0",
     "react-helmet": "^5.2.0",
+    "react-load-script": "0.0.6",
     "typography-theme-bootstrap": "^0.16.7"
   }
 }
