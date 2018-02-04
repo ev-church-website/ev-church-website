@@ -20,6 +20,8 @@
 - Netlify CMS
   - setup content
   - fix google authentication (https://github.com/netlify/netlify-identity-widget/issues/118)
+  - order events
+  - look at refresh options
 - Bible verse hovering or fill out the rest of the lookup map
 - work on the opening image
   - right now it's centered only because the maxWidth is set the the same value
