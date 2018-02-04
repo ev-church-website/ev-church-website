@@ -6,6 +6,7 @@ collections:
   - name: "events"
     label: "Events"
     folder: "data/events"
+    format: "json"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
