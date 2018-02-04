@@ -7,6 +7,7 @@ import SectionHeading from '../shared/SectionHeading.js';
 import congregation from '../../static/congregation.jpg';
 import Script from 'react-load-script';
 import Colors from '../styles/Colors';
+import EventsSection from '../content-sections/EventsSection.js';
 
 export default class Index extends React.Component {
 
@@ -148,6 +149,8 @@ export default class Index extends React.Component {
 
         </div>
 
+        <EventsSection data={this.props.data.allEventsJson.edges.map(edge => edge.node)}/>
+
 
       </div>
 
@@ -156,3 +159,21 @@ export default class Index extends React.Component {
   }
 }
 
+
+//TODO: break this up?
+export const query = graphql`
+  query AllDataQuery {
+  
+    allEventsJson {
+      edges {
+        node {
+          title
+          date
+          description
+        }
+      }
+    }
+    
+    
+  }
+`;
