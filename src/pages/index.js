@@ -34,10 +34,10 @@ export default class Index extends React.Component {
 
       <div>
 
-        <Script
-          url="https://identity.netlify.com/v1/netlify-identity-widget.js"
-          onLoad={this.handleNetlifyIdentityLoad}
-        />
+        {/*<Script*/}
+          {/*url="https://identity.netlify.com/v1/netlify-identity-widget.js"*/}
+          {/*onLoad={this.handleNetlifyIdentityLoad}*/}
+        {/*/>*/}
 
         <div>
 
