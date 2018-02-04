@@ -12,7 +12,6 @@
     "gatsby-link": "^1.6.22",
     "gatsby-plugin-glamor": "^1.6.8",
     "gatsby-plugin-google-analytics": "^1.0.14",
-    "gatsby-plugin-netlify-cms": "^1.0.5",
     "gatsby-plugin-typography": "^1.7.10",
     "prop-types": "^15.6.0",
     "react-helmet": "^5.2.0",
