@@ -8,6 +8,7 @@ import congregation from '../../static/congregation.jpg';
 import Script from 'react-load-script';
 import Colors from '../styles/Colors';
 import EventsSection from '../content-sections/EventsSection.js';
+import ContactUsSection from '../content-sections/ContactUsSection.js';
 
 export default class Index extends React.Component {
 
@@ -151,6 +152,11 @@ export default class Index extends React.Component {
 
         <EventsSection data={this.props.data.allEventsJson.edges.map(edge => edge.node)}/>
 
+        <div css={{backgroundColor: Colors.grayBackground}}>
+
+          <ContactUsSection />
+
+        </div>
 
       </div>
 
