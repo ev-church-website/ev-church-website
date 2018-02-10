@@ -13,7 +13,7 @@ export default ({ data }) => {
 
       <SectionHeading>CONTACT US</SectionHeading>
 
-      <form name="contact" data-netlify="true" css={{
+      <form name="contact" method="post" data-netlify="true" css={{
         display:'flex',
         flexDirection: 'column',
         alignItems: 'center',
