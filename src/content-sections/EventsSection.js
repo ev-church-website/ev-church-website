@@ -7,7 +7,7 @@ import marked from 'marked';
 export default ({ data }) => {
   return (
     <div className={`${BaseClasses.container}`} css={{
-      paddingBottom: '2rem'
+      padding: '0rem 1rem 2rem'
     }}>
 
       <SectionHeading>UPCOMING EVENTS</SectionHeading>
@@ -22,11 +22,12 @@ export default ({ data }) => {
           </tr>
         </thead>
 
-        {data.map((event) => {
+        <tbody>
+        {data.map((event, eventIndex) => {
 
           return (
 
-            <tr>
+            <tr key={eventIndex}>
               <td css={{verticalAlign: 'top'}}>{formatDate(event.date)}</td>
               <td css={{verticalAlign: 'top'}}>{event.title}</td>
               <td dangerouslySetInnerHTML={{ __html: marked(event.description) }} ></td>
@@ -35,6 +36,7 @@ export default ({ data }) => {
           );
 
         })}
+        </tbody>
 
       </table>
 
