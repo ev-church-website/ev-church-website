@@ -117,7 +117,7 @@ export default class ContactUsSection extends React.Component {
 
           <div css={{
             paddingTop: '1rem',
-            visibility: (this.state.responseMessage ? 'visible' : 'hidden')
+            visibility: (this.state.isSubmitted ? 'visible' : 'hidden')
           }}>
 
             Thanks! We have received your message.
