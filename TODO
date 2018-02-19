@@ -18,6 +18,7 @@
 == Features ==
 
 - contact us form working through netlify
+    https://github.com/imorente/gatsby-netlify-form-example
 - Netlify CMS
   - setup content
   - fix google authentication (https://github.com/netlify/netlify-identity-widget/issues/118)

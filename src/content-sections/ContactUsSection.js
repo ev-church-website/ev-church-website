@@ -5,48 +5,90 @@ import FormElement from '../shared/FormElement.js';
 
 const elementWidth = '400px';
 
-export default ({ data }) => {
-  return (
-    <div className={`${BaseClasses.container}`} css={{
-      padding: '0rem 1rem 2rem',
-    }}>
 
-      <SectionHeading>CONTACT US</SectionHeading>
+function encode(data) {
+  return Object.keys(data)
+    .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+    .join("&");
+}
 
-      <form name="contact" method="post" data-netlify="true" css={{
-        display:'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
+export default class ContactUsSection extends React.Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
+
+  handleChange = (e) => {
+    this.setState({[e.target.name]: e.target.value});
+  };
+
+  handleSubmit = e => {
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-name": "contact", ...this.state })
+    })
+      .then(() => alert("Success!"))
+      .catch(error => alert(error));
+
+    e.preventDefault();
+  };
+
+  render() {
+    return (
+      <div className={`${BaseClasses.container}`} css={{
+        padding: '0rem 1rem 2rem',
       }}>
 
-        <FormElement label="Name" width={elementWidth}>
+        <SectionHeading>CONTACT US</SectionHeading>
 
-          <input type="text" name="name" css={{width:'100%'}} />
+        <form
+          name="contact"
+          method="post"
+          data-netlify="true"
+          data-netlify-honeypot="bot-field"
+          css={{
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+          }}
+          onSubmit={this.handleSubmit}
+        >
 
-        </FormElement>
+          <p hidden>
+            <input name="bot-field" onChange={this.handleChange}/>
+          </p>
 
-        <FormElement label="Email" width={elementWidth}>
+          <FormElement label="Name" width={elementWidth}>
 
-          <input type="text" name="email" css={{width:'100%'}} />
+            <input type="text" name="name" css={{width: '100%'}} onChange={this.handleChange}/>
 
-        </FormElement>
+          </FormElement>
 
-        <FormElement label="Phone" width={elementWidth}>
+          <FormElement label="Email" width={elementWidth}>
 
-          <input type="text" name="phone" css={{width:'100%'}} />
+            <input type="text" name="email" css={{width: '100%'}} onChange={this.handleChange}/>
 
-        </FormElement>
+          </FormElement>
 
-        <FormElement label="Message" width={elementWidth}>
+          <FormElement label="Phone" width={elementWidth}>
 
-          <textarea name="message" css={{width:'100%', height: '10rem'}} />
+            <input type="text" name="phone" css={{width: '100%'}} onChange={this.handleChange}/>
 
-        </FormElement>
+          </FormElement>
 
-        <button type="submit">Send</button>
+          <FormElement label="Message" width={elementWidth}>
 
-      </form>
+            <textarea name="message" css={{width: '100%', height: '10rem'}} onChange={this.handleChange}/>
 
-    </div>
-  )
+          </FormElement>
+
+          <button type="submit">Send</button>
+
+        </form>
+
+      </div>
+    )
+  }
 }
