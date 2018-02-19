@@ -9,7 +9,7 @@ const propTypes = {
 const FormElement = (props) =>
 <div css={{
   width: props.width || '100%',
-  paddingBottom: '1.5rem',
+  padding: '0 1rem 1.5rem',
 }}>
 
   <div>{props.label}</div>

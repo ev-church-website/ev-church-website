@@ -5,13 +5,13 @@ export default (props) =>
 <div css={{
   fontSize: '1rem',
   textAlign: 'center',
-  padding: '0 1.5rem 0',
+  padding: '0 0 0 1.5rem',
   ' a': {
     color: Colors.white,
     textDecoration: 'none'
   }
 }}>
-  <Link to={props.to}>
+  <a href={props.to}>
     {props.children}
-  </Link>
+  </a>
 </div>

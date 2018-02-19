@@ -3,6 +3,12 @@ import * as BaseClasses from '../styles/BaseClasses';
 import { Helmet } from 'react-helmet';
 import HeaderLink from '../shared/HeaderLink';
 import Colors from '../styles/Colors';
+import Media from '../styles/Media';
+
+if (typeof window !== 'undefined') {
+  // Make scroll behavior of internal links smooth
+  require('smooth-scroll')('a[href*="#"]');
+}
 
 export default ({ children }) =>
 <div css={{ margin: '0 auto'}}>
@@ -22,20 +28,35 @@ export default ({ children }) =>
       justifyContent: 'space-between',
     }}>
 
-      <div css={{fontSize: '1.5rem'}}>
+      <div css={{
+        fontSize: '1.5rem',
+        [Media.phone]: {
+          textAlign: 'center',
+          width: '100%',
+        }
+      }}>
 
         Eagle Valley
         Church of Christ
 
       </div>
 
-      <div css={{display: 'flex'}}>
+      <div css={{
+        display: 'flex',
+        [Media.phone]: {
+          display: 'none',
+        }
+      }}>
 
-        <HeaderLink to="/events">
+        <HeaderLink to="#about">
+          ABOUT
+        </HeaderLink>
+
+        <HeaderLink to="#events">
           EVENTS
         </HeaderLink>
 
-        <HeaderLink to="/contact">
+        <HeaderLink to="#contact">
           CONTACT
         </HeaderLink>
 
