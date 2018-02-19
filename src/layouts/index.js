@@ -4,6 +4,7 @@ import { Helmet } from 'react-helmet';
 import HeaderLink from '../shared/HeaderLink';
 import Colors from '../styles/Colors';
 import Media from '../styles/Media';
+import Headroom from 'react-headroom';
 
 if (typeof window !== 'undefined') {
   // Make scroll behavior of internal links smooth
@@ -19,52 +20,56 @@ export default ({ children }) =>
 
   </Helmet>
 
-  <div css={{backgroundColor: Colors.primaryBackground}}>
+  <Headroom>
 
-    <header className={`${BaseClasses.container}`} css={{
-      padding: '1rem',
-      color: 'white',
-      display: 'flex',
-      justifyContent: 'space-between',
-    }}>
+    <div css={{backgroundColor: Colors.primaryBackground}}>
 
-      <div css={{
-        fontSize: '1.5rem',
-        [Media.phone]: {
-          textAlign: 'center',
-          width: '100%',
-        }
-      }}>
-
-        Eagle Valley
-        Church of Christ
-
-      </div>
-
-      <div css={{
+      <header className={`${BaseClasses.container}`} css={{
+        padding: '1rem',
+        color: 'white',
         display: 'flex',
-        [Media.phone]: {
-          display: 'none',
-        }
+        justifyContent: 'space-between',
       }}>
 
-        <HeaderLink to="#about">
-          ABOUT
-        </HeaderLink>
+        <div css={{
+          fontSize: '1.5rem',
+          [Media.phone]: {
+            textAlign: 'center',
+            width: '100%',
+          }
+        }}>
 
-        <HeaderLink to="#events">
-          EVENTS
-        </HeaderLink>
+          Eagle Valley
+          Church of Christ
 
-        <HeaderLink to="#contact">
-          CONTACT
-        </HeaderLink>
+        </div>
 
-      </div>
+        <div css={{
+          display: 'flex',
+          [Media.phone]: {
+            display: 'none',
+          }
+        }}>
 
-    </header>
+          <HeaderLink to="#about">
+            ABOUT
+          </HeaderLink>
 
-  </div>
+          <HeaderLink to="#events">
+            EVENTS
+          </HeaderLink>
+
+          <HeaderLink to="#contact">
+            CONTACT
+          </HeaderLink>
+
+        </div>
+
+      </header>
+
+    </div>
+
+  </Headroom>
 
   <div>
 
