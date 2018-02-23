@@ -21,7 +21,6 @@
     "prop-types": "^15.6.0",
     "react-headroom": "^2.2.2",
     "react-helmet": "^5.2.0",
-    "react-load-script": "0.0.6",
     "smooth-scroll": "^12.1.5",
     "typography-theme-bootstrap": "^0.16.7"
   }
