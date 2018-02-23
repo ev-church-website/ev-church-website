@@ -4,32 +4,24 @@ import Tile from '../shared/Tile.js';
 import ScriptureLink from '../shared/ScriptureLink.js';
 import SectionHeading from '../shared/SectionHeading.js';
 import congregation from '../../static/congregation.jpg';
+import Script from 'react-load-script';
 import Colors from '../styles/Colors';
 import EventsSection from '../content-sections/EventsSection.js';
 import ContactUsSection from '../content-sections/ContactUsSection.js';
-import { Helmet } from 'react-helmet';
 
 export default class Index extends React.Component {
 
   handleNetlifyIdentityLoad() {
 
-    console.log('onload');
-
     if (window.netlifyIdentity) {
 
-      console.log('netlifyIdentity');
-
-      window.netlifyIdentity.on('init', user => {
-
-        console.log('init');
+      window.netlifyIdentity.on("init", user => {
         if (!user) {
-          window.netlifyIdentity.on('login', () => {
-            document.location.href = '/admin/';
+          window.netlifyIdentity.on("login", () => {
+            document.location.href = "/admin/";
           });
         }
       });
-
-      window.netlifyIdentity.init();
 
     }
 
@@ -41,13 +33,9 @@ export default class Index extends React.Component {
 
       <div>
 
-        <Helmet
-          script={[{src: 'https://identity.netlify.com/v1/netlify-identity-widget.js'}]}
-          onChangeClientState={(newState, addedTags) => {
-            if (addedTags.scriptTags) {
-              addedTags.scriptTags[0].onload = this.handleNetlifyIdentityLoad;
-            }
-          }}
+        <Script
+          url="https://identity.netlify.com/v1/netlify-identity-widget.js"
+          onLoad={this.handleNetlifyIdentityLoad}
         />
 
         <div>
