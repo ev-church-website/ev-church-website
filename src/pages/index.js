@@ -23,6 +23,8 @@ export default class Index extends React.Component {
         }
       });
 
+      window.netlifyIdentity.init();
+
     }
 
   }
