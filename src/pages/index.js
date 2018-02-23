@@ -11,6 +11,28 @@ import { Helmet } from 'react-helmet';
 
 export default class Index extends React.Component {
 
+  handleNetlifyIdentityLoad() {
+
+    console.log('onload');
+
+    if (window.netlifyIdentity) {
+
+      console.log('netlifyIdentity');
+
+      window.netlifyIdentity.on('init', user => {
+
+        console.log('init');
+        if (!user) {
+          window.netlifyIdentity.on('login', () => {
+            document.location.href = '/admin/';
+          });
+        }
+      });
+
+    }
+
+  }
+
   render() {
 
     return (
@@ -21,25 +43,7 @@ export default class Index extends React.Component {
           script={[{src: 'https://identity.netlify.com/v1/netlify-identity-widget.js'}]}
           onChangeClientState={(newState, addedTags) => {
             if (addedTags.scriptTags) {
-              addedTags.scriptTags[0].onload = () => {
-
-
-                console.log('onload')
-                if (window.netlifyIdentity) {
-
-                  window.netlifyIdentity.on('init', user => {
-
-                    console.log('init');
-                    if (!user) {
-                      window.netlifyIdentity.on('login', () => {
-                        document.location.href = '/admin/';
-                      });
-                    }
-                  });
-
-                }
-
-              };
+              addedTags.scriptTags[0].onload = this.handleNetlifyIdentityLoad;
             }
           }}
         />
