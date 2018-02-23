@@ -18,14 +18,18 @@ export default class Index extends React.Component {
       <div>
 
         <Helmet
-          script={[{src: 'https://identity.netlify.com/v1/netlify-identity-widget.js', defer: true}]}
+          script={[{src: 'https://identity.netlify.com/v1/netlify-identity-widget.js'}]}
           onChangeClientState={(newState, addedTags) => {
             if (addedTags.scriptTags) {
               addedTags.scriptTags[0].onload = () => {
 
+
+                console.log('onload')
                 if (window.netlifyIdentity) {
 
                   window.netlifyIdentity.on('init', user => {
+
+                    console.log('init');
                     if (!user) {
                       window.netlifyIdentity.on('login', () => {
                         document.location.href = '/admin/';
