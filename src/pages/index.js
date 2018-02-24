@@ -8,6 +8,7 @@ import Colors from '../styles/Colors';
 import EventsSection from '../content-sections/EventsSection.js';
 import ContactUsSection from '../content-sections/ContactUsSection.js';
 import ClassesSection from '../content-sections/ClassesSection';
+import MissionsSection from '../content-sections/MissionsSection';
 
 export default class Index extends React.Component {
 
@@ -135,13 +136,20 @@ export default class Index extends React.Component {
 
         </div>
 
-        <div id="events" css={{backgroundColor: Colors.grayBackground}}>
+        <div id="missions" css={{backgroundColor: Colors.grayBackground}}>
+
+          <MissionsSection/>
+
+        </div>
+
+
+        <div id="events">
 
           <EventsSection data={this.props.data.allEventsJson.edges.map(edge => edge.node)}/>
 
         </div>
 
-        <div id="contact" >
+        <div id="contact" css={{backgroundColor: Colors.grayBackground}}>
 
           <ContactUsSection />
 

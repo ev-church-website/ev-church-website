@@ -23,7 +23,7 @@ function MessageCard(props) {
   return (
 
     <div css={{
-      padding: '2rem 1rem 2rem',
+      padding: '1rem',
       textAlign: props.justification,
       display: 'flex',
       [Media.phone]: {

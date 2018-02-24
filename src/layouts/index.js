@@ -59,6 +59,10 @@ export default ({ children }) =>
             CLASSES
           </HeaderLink>
 
+          <HeaderLink to="#missions">
+            MISSIONS
+          </HeaderLink>
+
           <HeaderLink to="#events">
             EVENTS
           </HeaderLink>

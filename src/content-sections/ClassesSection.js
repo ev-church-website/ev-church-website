@@ -8,7 +8,7 @@ import class2Image from '../../static/class2.png';
 export default function ClassesSection({ data }) {
   return (
     <div className={`${BaseClasses.container}`} css={{
-      padding: '0rem 1rem 2rem'
+      padding: '0rem 1rem 0rem'
     }}>
 
       <SectionHeading>Classes</SectionHeading>

@@ -5,7 +5,7 @@ export default (props) =>
 <div css={{
   fontSize: '1rem',
   textAlign: 'center',
-  padding: '0 0 0 1.5rem',
+  padding: '0 0 0 2rem',
   ' a': {
     color: Colors.white,
     textDecoration: 'none'
