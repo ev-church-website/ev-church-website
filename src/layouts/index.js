@@ -48,8 +48,7 @@ export default ({ children }) =>
           display: 'flex',
           [Media.phone]: {
             display: 'none',
-          },
-          alignItems: 'center',
+          }
         }}>
 
           <HeaderLink to="#about">
