@@ -3,6 +3,7 @@ import SectionHeading from '../shared/SectionHeading.js';
 import * as BaseClasses from "../styles/BaseClasses";
 import dateFormat from 'dateformat';
 import marked from 'marked';
+import Media from '../styles/Media';
 
 export default ({ data }) => {
   return (
@@ -12,7 +13,54 @@ export default ({ data }) => {
 
       <SectionHeading>UPCOMING EVENTS</SectionHeading>
 
-      <table>
+      <div css={{
+        display: 'none',
+        [Media.phone]: {
+          display: 'inline',
+        }
+      }}>
+        {data.map((event, eventIndex) => {
+
+          return (
+
+            <div css={{
+              paddingBottom: '1rem',
+            }}>
+
+              <div css={{
+                fontWeight: 'bold',
+                fontSize: '1.25rem',
+                textAlign: 'center',
+                paddingBottom: '.5rem'
+              }}>
+                {event.title}
+              </div>
+
+              <div css={{
+                textAlign: 'center',
+                fontStyle: 'italic',
+                paddingBottom: '.5rem',
+              }}>
+                {formatDate(event.date)}
+              </div>
+
+              <div dangerouslySetInnerHTML={{ __html: marked(event.description) }} ></div>
+
+            </div>
+
+          );
+
+        })}
+
+      </div>
+
+
+      <table css={{
+        display: 'inline',
+        [Media.phone] : {
+          display: 'none'
+        }
+      }}>
 
         <thead>
           <tr>

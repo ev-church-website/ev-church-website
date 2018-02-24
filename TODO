@@ -1,4 +1,10 @@
 
+TODO:
+- About us section in netlify cms
+    - links in the content
+- google Calendar integrated onto the site as a list
+
+
 
 == Bugs ==
 
@@ -11,6 +17,7 @@
 - Missions and Outreach
 - Classes
 - Sermons (do we want to bring this over?)
+    - yes but maybe we just store the top three and hide the rest
 
 
 == Features ==
@@ -20,7 +27,6 @@
   - fix google authentication (https://github.com/netlify/netlify-identity-widget/issues/118)
   - order events
   - look at refresh options
-- Bible verse hovering or fill out the rest of the lookup map
 - work on the opening image
   - right now it's centered only because the maxWidth is set the the same value
   - maybe a faded border?
