@@ -55,6 +55,10 @@ export default ({ children }) =>
             ABOUT
           </HeaderLink>
 
+          <HeaderLink to="#classes">
+            CLASSES
+          </HeaderLink>
+
           <HeaderLink to="#events">
             EVENTS
           </HeaderLink>

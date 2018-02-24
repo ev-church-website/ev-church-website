@@ -7,6 +7,7 @@ import congregation from '../../static/congregation.jpg';
 import Colors from '../styles/Colors';
 import EventsSection from '../content-sections/EventsSection.js';
 import ContactUsSection from '../content-sections/ContactUsSection.js';
+import ClassesSection from '../content-sections/ClassesSection';
 
 export default class Index extends React.Component {
 
@@ -25,7 +26,6 @@ export default class Index extends React.Component {
           </div>
 
         </div>
-
 
         <div id="about">
 
@@ -129,13 +129,19 @@ export default class Index extends React.Component {
 
         </div>
 
-        <div id="events">
+        <div id="classes">
+
+          <ClassesSection/>
+
+        </div>
+
+        <div id="events" css={{backgroundColor: Colors.grayBackground}}>
 
           <EventsSection data={this.props.data.allEventsJson.edges.map(edge => edge.node)}/>
 
         </div>
 
-        <div id="contact" css={{backgroundColor: Colors.grayBackground}}>
+        <div id="contact" >
 
           <ContactUsSection />
 
