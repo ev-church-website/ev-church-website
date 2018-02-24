@@ -95,13 +95,13 @@ export default class ContactUsSection extends React.Component {
 
           </FormElement>
 
-          <FormElement label="Email" width={elementWidth}>
+          <FormElement label="Email (optional)" width={elementWidth}>
 
             <input type="text" name="email" css={{width: '100%'}} value={this.state.formData.email}  onChange={this.handleChange}/>
 
           </FormElement>
 
-          <FormElement label="Phone" width={elementWidth}>
+          <FormElement label="Phone (optional)" width={elementWidth}>
 
             <input type="text" name="phone" css={{width: '100%'}} value={this.state.formData.phone} onChange={this.handleChange}/>
 
@@ -112,6 +112,8 @@ export default class ContactUsSection extends React.Component {
             <textarea name="message" css={{width: '100%', height: '10rem'}} value={this.state.formData.message} onChange={this.handleChange}/>
 
           </FormElement>
+
+          <div data-netlify-recaptcha></div>
 
           <button type="submit">Send</button>
 
