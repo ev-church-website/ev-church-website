@@ -4,41 +4,17 @@ import Tile from '../shared/Tile.js';
 import ScriptureLink from '../shared/ScriptureLink.js';
 import SectionHeading from '../shared/SectionHeading.js';
 import congregation from '../../static/congregation.jpg';
-import Script from 'react-load-script';
 import Colors from '../styles/Colors';
 import EventsSection from '../content-sections/EventsSection.js';
 import ContactUsSection from '../content-sections/ContactUsSection.js';
 
 export default class Index extends React.Component {
 
-  handleNetlifyIdentityLoad() {
-
-    if (window.netlifyIdentity) {
-
-      window.netlifyIdentity.on("init", user => {
-        if (!user) {
-          window.netlifyIdentity.on("login", () => {
-            document.location.href = "/admin/";
-          });
-        }
-      });
-
-      window.netlifyIdentity.init();
-
-    }
-
-  }
-
   render() {
 
     return (
 
       <div>
-
-        <Script
-          url="https://identity.netlify.com/v1/netlify-identity-widget.js"
-          onLoad={this.handleNetlifyIdentityLoad}
-        />
 
         <div>
 

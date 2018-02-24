@@ -21,5 +21,6 @@ module.exports = {
       }
     },
     'gatsby-transformer-json',
+    'gatsby-plugin-netlify-cms',
   ],
 };
