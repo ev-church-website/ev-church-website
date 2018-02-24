@@ -87,7 +87,7 @@ export default class Index extends React.Component {
               <div css={{
                 fontSize: '1.25rem',
                 margin: '1rem auto',
-                textAlign: 'left',
+                textAlign: 'center',
                 maxWidth: '200px'
               }}>
 

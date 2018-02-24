@@ -4,7 +4,7 @@ import * as BaseClasses from '../styles/BaseClasses';
 import FormElement from '../shared/FormElement.js';
 import update from 'immutability-helper';
 
-const elementWidth = '400px';
+const elementWidth = '350px';
 
 
 function encode(data) {
