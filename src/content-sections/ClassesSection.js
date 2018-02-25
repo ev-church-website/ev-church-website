@@ -17,17 +17,16 @@ export default function ClassesSection({ data }) {
       <MessageCard justification="left" image={class1Image}>
 
         <p>
-
           At Eagle Valley Church of Christ we offer many different classes for all ages.
           All of the classes here at Eagle Valley focus on learning God’s word as a group.
-
         </p>
 
         <p>
-
           We encourage everyone to comment and ask questions (before, during, and after class), so that everyone can gain a better understanding of God’s will.
-          In each class we also tailor the content to the specific age group so that each individual can implement God’s word into their life.
+        </p>
 
+        <p>
+          In each class we also tailor the content to the specific age group so that each individual can implement God’s word into their life.
         </p>
 
       </MessageCard>
