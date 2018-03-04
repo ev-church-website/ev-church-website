@@ -1,27 +1,35 @@
 
 
-export default (props) =>
+export default function Tile(props) {
 
-<div css={{
-  padding: '1rem',
-  minWidth: '300px',
-  flex: '1 1 ' + props.width,
-}}>
+  return (
 
-  <div css={{
-    fontWeight: 'bold',
-    fontSize: '1.25rem',
-    textAlign: 'center',
-    paddingBottom: '.5rem'
-  }}>
-    {props.title}
-  </div>
+    <div css={{
+      padding: '1rem',
+      minWidth: '300px',
+      flex: '1 1 ' + props.width,
+    }}>
 
-  <div css={{
-    textAlign: 'center'
-  }}>
-    {props.children}
-  </div>
+      <div css={{
+        fontWeight: 'bold',
+        fontSize: '1.25rem',
+        textAlign: 'center',
+        paddingBottom: '.5rem'
+      }}>
+        {props.title}
+      </div>
+
+      <div css={{
+        textAlign: 'center'
+      }}>
+        {props.children}
+      </div>
 
 
-</div>
+    </div>
+
+  )
+
+}
+
+

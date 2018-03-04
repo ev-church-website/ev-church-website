@@ -4,17 +4,58 @@ import * as BaseClasses from "../styles/BaseClasses";
 import MessageCard from '../shared/MessageCard';
 import class1Image from '../../static/class1.png';
 import class2Image from '../../static/class2.png';
+import Tile from '../shared/Tile';
 
 export default function MissionsSection({ data }) {
   return (
     <div className={`${BaseClasses.container}`} css={{
-      padding: '0rem 1rem 2rem'
+      padding: '0rem 1rem 2rem',
     }}>
 
-      <SectionHeading>Missions</SectionHeading>
+      <SectionHeading>Missions and Outreach</SectionHeading>
 
+      <div css={{display: 'flex',flexWrap:'wrap'}}>
 
-      (content in progress)
+        <Tile width="50%">
+
+          <p>
+            The members of Eagle Valley are committed and ever striving to focus
+            our mission efforts toward the spread of the Gospel both locally and
+            throughout the world.
+          </p>
+
+          <p>
+
+            Here are some of the missions and outreach ministries we support.
+
+          </p>
+
+        </Tile>
+
+        <Tile width="50%">
+          <p>
+            <a href="http://www.mnch.info/">Manuelito Navajo Children’s Home</a>
+            <div>New Mexico</div>
+          </p>
+          <p>
+            <a href="https://www.shultslewis.org">Shults-Lewis Child and Family Services</a>
+            <div>Valparaiso, Indiana</div>
+          </p>
+          <p>
+            <a href="http://disasterreliefeffort.org/">
+              Churches of Christ Disaster Relief Effort
+            </a>
+            <div>Based in Nashville, Tennessee but work Nation Wide</div>
+          </p>
+          <p>
+            <a href="http://www.housetohouse.com/">
+              House to House Heart to Heart
+            </a>
+          </p>
+
+        </Tile>
+
+      </div>
 
     </div>
   )

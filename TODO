@@ -1,12 +1,9 @@
 
-TODO:
-- About us section in netlify cms
-    - links in the content
-- google Calendar integrated onto the site as a list
-
-
 
 == Bugs ==
+
+- contact form not working (evaluate alternative)
+- fix order or events
 
 
 
@@ -14,21 +11,20 @@ TODO:
 
 - missing content from about us page (first section)
   - could we condense this?
-- Missions and Outreach
-- Classes
 - Sermons (do we want to bring this over?)
     - yes but maybe we just store the top three and hide the rest
 
 
 == Features ==
 
-- Netlify CMS
-  - setup content
-  - fix google authentication (https://github.com/netlify/netlify-identity-widget/issues/118)
-  - order events
-  - look at refresh options
+- allow for more content in netlify cms
+
 - work on the opening image
   - right now it's centered only because the maxWidth is set the the same value
   - maybe a faded border?
   - compress?
-- it feels like something is missing at the top
+  - it feels like something is missing at the top
+
+- auto refresh of events list?
+
+- evaluate Google Calendar

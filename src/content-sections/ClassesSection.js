@@ -35,7 +35,41 @@ export default function ClassesSection({ data }) {
 
         <p>
 
-          Put times of classes and classes available here
+          <div css={{fontWeight: 'bold'}}>
+            Sunday Morning Classes (9:00 am-9:45 am)
+          </div>
+
+          Nursery (0-2 years)<br />
+          Toddlers (2-4 years)<br />
+          Preschool (Kindergarten - 1st grade)<br />
+          Elementary (2nd - 6th grade)<br />
+          Teens (11 years to high school)<br />
+          Adults
+
+        </p>
+
+        <p>
+
+          <div css={{fontWeight: 'bold'}}>
+            Sunday Evening Classes (6:00pm - 6:45pm)
+          </div>
+
+          Nursery (0-2 years)<br />
+          Adults
+
+        </p>
+
+        <p>
+
+          <div css={{fontWeight: 'bold'}}>
+            Wednesday Night Classes (7:00pm - 7:45pm)
+          </div>
+
+          Nursery (0-2 years)<br />
+          Toddlers (2-4 years)<br />
+          Preschool (Kindergarten - 1st grade)<br />
+          Elementary (2nd - 6th grade)<br />
+          Adults
 
         </p>
 
