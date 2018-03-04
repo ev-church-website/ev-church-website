@@ -22,10 +22,13 @@ export default ({ children }) =>
 
   <Headroom>
 
-    <div css={{backgroundColor: Colors.primaryBackground}}>
+    <div css={{
+      backgroundColor: Colors.primaryBackground,
+      boxShadow: '0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28)',
+    }}>
 
       <header className={`${BaseClasses.container}`} css={{
-        padding: '1rem',
+        padding: '1.25rem',
         color: 'white',
         display: 'flex',
         justifyContent: 'space-between',

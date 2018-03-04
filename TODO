@@ -3,7 +3,6 @@
 == Bugs ==
 
 - contact form not working (evaluate alternative)
-- fix order or events
 
 
 
@@ -18,12 +17,6 @@
 == Features ==
 
 - allow for more content in netlify cms
-
-- work on the opening image
-  - right now it's centered only because the maxWidth is set the the same value
-  - maybe a faded border?
-  - compress?
-  - it feels like something is missing at the top
 
 - auto refresh of events list?
 

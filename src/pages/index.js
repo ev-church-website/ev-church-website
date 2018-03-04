@@ -20,9 +20,9 @@ export default class Index extends React.Component {
 
         <div>
 
-          <div className={`${BaseClasses.container}`}>
+          <div css={{width: "100%"}}>
 
-            <img css={{marginBottom: 0}} src={congregation} />
+            <img css={{marginBottom: 0, width:'100%'}} src={congregation} />
 
           </div>
 
