@@ -167,7 +167,7 @@ export default class Index extends React.Component {
 export const query = graphql`
   query AllDataQuery {
   
-    allEventsJson {
+    allEventsJson(sort: {fields: [date]}) {
       edges {
         node {
           title
