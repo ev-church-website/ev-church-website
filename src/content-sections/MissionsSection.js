@@ -35,17 +35,20 @@ export default function MissionsSection({ data }) {
         <Tile width="50%">
           <p>
             <a href="http://www.mnch.info/">Manuelito Navajo Children’s Home</a>
-            <div>New Mexico</div>
+            <br />
+            New Mexico
           </p>
           <p>
             <a href="https://www.shultslewis.org">Shults-Lewis Child and Family Services</a>
-            <div>Valparaiso, Indiana</div>
+            <br />
+            Valparaiso, Indiana
           </p>
           <p>
             <a href="http://disasterreliefeffort.org/">
               Churches of Christ Disaster Relief Effort
             </a>
-            <div>Based in Nashville, Tennessee but work Nation Wide</div>
+            <br />
+            Based in Nashville, Tennessee but work Nation Wide
           </p>
           <p>
             <a href="http://www.housetohouse.com/">

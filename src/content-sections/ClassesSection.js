@@ -33,7 +33,7 @@ export default function ClassesSection({ data }) {
 
       <MessageCard justification="right" image={class2Image}>
 
-        <p>
+        <div>
 
           <div css={{fontWeight: 'bold'}}>
             Sunday Morning Classes (9:00 am-9:45 am)
@@ -46,9 +46,11 @@ export default function ClassesSection({ data }) {
           Teens (11 years to high school)<br />
           Adults
 
-        </p>
+        </div>
 
-        <p>
+        <br />
+
+        <div>
 
           <div css={{fontWeight: 'bold'}}>
             Sunday Evening Classes (6:00pm - 6:45pm)
@@ -57,9 +59,11 @@ export default function ClassesSection({ data }) {
           Nursery (0-2 years)<br />
           Adults
 
-        </p>
+        </div>
 
-        <p>
+        <br />
+
+        <div>
 
           <div css={{fontWeight: 'bold'}}>
             Wednesday Night Classes (7:00pm - 7:45pm)
@@ -71,7 +75,7 @@ export default function ClassesSection({ data }) {
           Elementary (2nd - 6th grade)<br />
           Adults
 
-        </p>
+        </div>
 
       </MessageCard>
 

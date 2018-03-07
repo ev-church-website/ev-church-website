@@ -23,7 +23,7 @@ export default ({ data }) => {
 
           return (
 
-            <div css={{
+            <div key={eventIndex} css={{
               paddingBottom: '1rem',
             }}>
 

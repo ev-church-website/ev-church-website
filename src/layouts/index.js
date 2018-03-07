@@ -49,6 +49,7 @@ export default ({ children }) =>
 
         <div css={{
           display: 'flex',
+          alignItems: 'center',
           [Media.phone]: {
             display: 'none',
           }
