@@ -3,12 +3,12 @@ import SectionHeading from '../shared/SectionHeading.js';
 import * as BaseClasses from "../styles/BaseClasses";
 import MessageCard from '../shared/MessageCard';
 import class1Image from '../../static/class1.png';
-import class2Image from '../../static/class2.png';
+import Media from '../styles/Media';
 
 export default function ClassesSection({ data }) {
   return (
     <div className={`${BaseClasses.container}`} css={{
-      padding: '0rem 1rem 0rem'
+      padding: '0rem 1rem 2rem'
     }}>
 
       <SectionHeading>Classes</SectionHeading>
@@ -31,12 +31,23 @@ export default function ClassesSection({ data }) {
 
       </MessageCard>
 
-      <MessageCard justification="right" image={class2Image}>
+      <div css={{
+        display: 'flex',
+        justifyContent: 'space-around',
+        [Media.phone]: {
+          flexFlow: 'column',
+          textAlign: 'center',
+        }
+      }}>
 
         <div>
 
           <div css={{fontWeight: 'bold'}}>
-            Sunday Morning Classes (9:00 am-9:45 am)
+            Sunday Morning Classes
+          </div>
+
+          <div css={{fontStyle: 'italic'}}>
+            9:00am - 9:45am
           </div>
 
           Nursery (0-2 years)<br />
@@ -53,7 +64,11 @@ export default function ClassesSection({ data }) {
         <div>
 
           <div css={{fontWeight: 'bold'}}>
-            Sunday Evening Classes (6:00pm - 6:45pm)
+            Sunday Evening Classes
+          </div>
+
+          <div css={{fontStyle: 'italic'}}>
+            6:00pm - 6:45pm
           </div>
 
           Nursery (0-2 years)<br />
@@ -66,7 +81,11 @@ export default function ClassesSection({ data }) {
         <div>
 
           <div css={{fontWeight: 'bold'}}>
-            Wednesday Night Classes (7:00pm - 7:45pm)
+            Wednesday Night Classes
+          </div>
+
+          <div css={{fontStyle: 'italic'}}>
+            7:00pm - 7:45pm
           </div>
 
           Nursery (0-2 years)<br />
@@ -77,7 +96,7 @@ export default function ClassesSection({ data }) {
 
         </div>
 
-      </MessageCard>
+      </div>
 
     </div>
   )

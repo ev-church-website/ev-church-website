@@ -1,9 +1,6 @@
 import React from 'react';
 import SectionHeading from '../shared/SectionHeading.js';
 import * as BaseClasses from "../styles/BaseClasses";
-import MessageCard from '../shared/MessageCard';
-import class1Image from '../../static/class1.png';
-import class2Image from '../../static/class2.png';
 import Tile from '../shared/Tile';
 
 export default function MissionsSection({ data }) {
