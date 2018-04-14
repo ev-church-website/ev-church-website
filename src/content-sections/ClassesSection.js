@@ -16,17 +16,16 @@ export default function ClassesSection({ data }) {
 
       <MessageCard justification="left" image={class1Image}>
 
-        <p>
-          At Eagle Valley Church of Christ we offer many different classes for all ages.
-          All of the classes here at Eagle Valley focus on learning God’s word as a group.
-        </p>
+        <br />
 
         <p>
-          We encourage everyone to comment and ask questions (before, during, and after class), so that everyone can gain a better understanding of God’s will.
+          Bible classes are offered for all ages, each being age specific with a focus on learning God’s word as a group and applying it to our lives.
         </p>
 
+        <br />
+
         <p>
-          In each class we also tailor the content to the specific age group so that each individual can implement God’s word into their life.
+          Everyone is encouraged to participate and ask questions (before, during, and after class) to promote a better understanding of God’s will.
         </p>
 
       </MessageCard>
@@ -46,15 +45,11 @@ export default function ClassesSection({ data }) {
             Sunday Morning Classes
           </div>
 
-          <div css={{fontStyle: 'italic'}}>
-            9:00am - 9:45am
-          </div>
-
           Nursery (0-2 years)<br />
           Toddlers (2-4 years)<br />
-          Preschool (Kindergarten - 1st grade)<br />
-          Elementary (2nd - 6th grade)<br />
-          Teens (11 years to high school)<br />
+          Preschool (Kindergarten - 1st Grade)<br />
+          Elementary (2nd - 6th Grade)<br />
+          Teens (11 years to High School)<br />
           Adults
 
         </div>
@@ -65,10 +60,6 @@ export default function ClassesSection({ data }) {
 
           <div css={{fontWeight: 'bold'}}>
             Sunday Evening Classes
-          </div>
-
-          <div css={{fontStyle: 'italic'}}>
-            6:00pm - 6:45pm
           </div>
 
           Nursery (0-2 years)<br />
@@ -84,14 +75,10 @@ export default function ClassesSection({ data }) {
             Wednesday Night Classes
           </div>
 
-          <div css={{fontStyle: 'italic'}}>
-            7:00pm - 7:45pm
-          </div>
-
           Nursery (0-2 years)<br />
           Toddlers (2-4 years)<br />
-          Preschool (Kindergarten - 1st grade)<br />
-          Elementary (2nd - 6th grade)<br />
+          Preschool (Kindergarten - 1st Grade)<br />
+          Elementary (2nd - 6th Grade)<br />
           Adults
 
         </div>

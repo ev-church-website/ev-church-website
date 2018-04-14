@@ -6,4 +6,6 @@ export default {
 
   primaryBackground: '#8a9eab',
 
+  linkBlue: '#36b',
+
 }

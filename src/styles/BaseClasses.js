@@ -28,3 +28,14 @@ export const inputStyle = css({
   padding: '0 8px'
 
 });
+
+export const link = css({
+
+  color: Colors.linkBlue,
+  textDecoration: 'none',
+
+  ':hover': {
+    textDecoration: 'underline',
+  }
+
+});

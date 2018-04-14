@@ -45,6 +45,12 @@ export default class Index extends React.Component {
               <br />
               (<ScriptureLink book="2 Corinthians" chapter="5" verse="9" />, &nbsp;
               <ScriptureLink book="Colossians" chapter="1" verse="9-10"/>)
+              <br />
+              <br />
+              Because we believe God’s word to be the all-encompassing truth, we place great emphasis on searching the truth,
+              speaking the truth, and living the truth in the spirit of love.
+              (<ScriptureLink book="John" chapter="17" verse="17" />, &nbsp;
+              <ScriptureLink book="Ephesians" chapter="4" verse="15"/>)
             </Tile>
 
             <Tile title="Our Worship Service" width="50%">
@@ -56,12 +62,12 @@ export default class Index extends React.Component {
 
             <Tile title="Our Fellowship" width="50%">
               Building genuine relationships with one another is a critical part of our congregation’s strength and unity.
-              We hold fellowship activities on a monthly basis where we enjoy and gain encouragement from our time together.
+              Fellowship activities abound where we enjoy and gain encouragement from our time together.
             </Tile>
 
             <Tile title="Our Invitation" width="50%">
-              The Eagle Valley Church of Christ is a visitor-friendly congregation’s strength and unity.
-              We hold fellowship activities on a monthly basis where we enjoy and gain encouragement from our time together.
+              Eagle Valley is a visitor-friendly congregation.  You will be made to feel welcome.
+              Simply sit and listen; or, better yet, participate!  Right now is a great time to visit.  We hope to see you soon!
             </Tile>
 
           </div>
