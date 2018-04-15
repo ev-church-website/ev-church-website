@@ -19,7 +19,7 @@ export default function ClassesSection({ data }) {
         <br />
 
         <p>
-          Bible classes are offered for all ages, each being age specific with a focus on learning God’s word as a group and applying it to our lives.
+          Bible classes are designed to be age specific with a focus on learning God's word as a group and applying it to our lives.
         </p>
 
         <br />
