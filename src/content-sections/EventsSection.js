@@ -64,9 +64,9 @@ export default ({ data }) => {
 
         <thead>
           <tr>
-            <th style={{width: '90px'}}>Date</th>
-            <th style={{width: '210px'}}>Name</th>
-            <th>Description</th>
+            <th style={{width: '100px'}}>Date</th>
+            <th style={{width: '250px'}}>Name</th>
+            <th style={{width: '550px'}}>Description</th>
           </tr>
         </thead>
 
