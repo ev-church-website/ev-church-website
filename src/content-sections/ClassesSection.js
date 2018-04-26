@@ -49,7 +49,7 @@ export default function ClassesSection({ data }) {
           Toddlers (2-4 years)<br />
           Preschool (Kindergarten - 1st Grade)<br />
           Elementary (2nd - 6th Grade)<br />
-          Teens (11 years to High School)<br />
+          Teens (13 years to High School)<br />
           Adults
 
         </div>
