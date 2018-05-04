@@ -13,7 +13,7 @@ export default ({ data }) => {
 
       <SectionHeading>UPCOMING EVENTS</SectionHeading>
 
-      <div css={{display: 'flex', justifyContent:'center'}}>
+      <div css={{display: 'flex', justifyContent:'center', paddingBottom: '1rem'}}>
         <a
           className={`${BaseClasses.link}`}
           href="https://calendar.google.com/calendar/embed?src=shkmbft44mds4g3ngvjfl3cffk%40group.calendar.google.com&ctz=America%2FNew_York"
