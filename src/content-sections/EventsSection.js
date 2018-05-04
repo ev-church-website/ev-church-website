@@ -13,6 +13,16 @@ export default ({ data }) => {
 
       <SectionHeading>UPCOMING EVENTS</SectionHeading>
 
+      <div css={{display: 'flex', justifyContent:'center'}}>
+        <a
+          className={`${BaseClasses.link}`}
+          href="https://calendar.google.com/calendar/embed?src=shkmbft44mds4g3ngvjfl3cffk%40group.calendar.google.com&ctz=America%2FNew_York"
+          target="_blank"
+        >
+          View in Google Calendar
+        </a>
+      </div>
+
       <div css={{
         display: 'none',
         [Media.phone]: {
