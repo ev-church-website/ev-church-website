@@ -21,6 +21,14 @@ export default ({ data }) => {
         >
           View in Google Calendar
         </a>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a
+          className={`${BaseClasses.link}`}
+          href="https://calendar.google.com/calendar/b/0?cid=c2hrbWJmdDQ0bWRzNGczbmd2amZsM2NmZmtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ"
+          target="_blank"
+        >
+          Add to Google Calendar
+        </a>
       </div>
 
       <div css={{
