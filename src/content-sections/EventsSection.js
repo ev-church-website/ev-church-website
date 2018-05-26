@@ -25,7 +25,7 @@ export default ({ data }) => {
         <a
           className={`${BaseClasses.link}`}
           css={{margin: '0 1rem 0', textAlign: 'center'}}
-          href="https://calendar.google.com/calendar/b/0?cid=c2hrbWJmdDQ0bWRzNGczbmd2amZsM2NmZmtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ"
+          href="https://calendar.google.com/calendar/b/0/r?cid=c2hrbWJmdDQ0bWRzNGczbmd2amZsM2NmZmtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ"
           target="_blank"
         >
           Add to Google Calendar
