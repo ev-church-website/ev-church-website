@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Focus (IN)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/png" href="focus-in/content/favicon.png" />
+
+  <!-- CSS/Styling -->
+  <link rel="stylesheet" href="focus-in/content/w3.css">
+  <link rel="stylesheet" href="focus-in/content/w3-theme-black.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Scripts -->
+  <!-- for smooth scrolling -->
+  <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@14.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+
+</head>
+
+<body id="myPage">
+
+  <!-- Navbar -->
+  <div class="w3-top">
+    <div class="w3-bar w3-theme-d2 w3-left-align">
+      <a id="menuButton" class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);">
+        <i class="fa fa-bars"></i>
+      </a>
+      <a href="#" class="w3-bar-item w3-button w3-teal">
+        <i class="fa fa-home w3-margin-right"></i>Focus (IN)</a>
+      <a href="#about" class="w3-bar-item w3-button w3-hide-small w3-hover-white">About</a>
+      <a href="#conference" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Conference</a>
+      <a href="#location" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Location</a>
+      <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contact</a>
+    </div>
+
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
+      <a href="#about" class="w3-bar-item w3-button">About</a>
+      <a href="#conference" class="w3-bar-item w3-button">Conference</a>
+      <a href="#location" class="w3-bar-item w3-button">Location</a>
+      <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+    </div>
+  </div>
+
+  <!-- Image Header -->
+  <!-- Div will display relative to base img -->
+  <div class="w3-display-container w3-animate-opacity">
+
+    <!-- this is the base img (gives div its size)  -->
+    <img src="focus-in/content/logo.jpg" alt="Focus (IN) Logo" style="width:100%;min-height:350px;max-height:600px;position: relative;top: 0;left: 0;">
+
+    <!-- This is the overlay img, it will display in the middle of its parent -->
+    <img src="focus-in/content/logo_text.png" alt="Focus (IN) Logo Text" style="width:100%;max-height: 600px;position: absolute;margin: auto;top: 0;left: 0;bottom: 0;right: 0;">
+
+  </div>
+
+  <!-- About Row -->
+  <div class="w3-row-padding w3-padding-64 w3-theme-l1" id="about">
+
+    <!-- About Info -->
+    <div class="w3-quarter w3-padding">
+      <h2>Mission</h2>
+      <p>
+        Our mission is to unite Christian young adults across Indiana in our focus on Christ. We will do this by studying the Word
+        of God together and creating fellowship opportunities throughout the year. We’ll be hosting two social events prior
+        to the conference, so we can get to know each other and get excited about diving deep into Scripture together!
+      </p>
+      <p>
+        If you’ve been longing for relationships with other young Christians, we hope that you will join us at these Focus (IN) events.
+        We’re praying that this endeavor will spark new opportunities for God’s people in Indiana to be unified in spirit,
+        "[stirring] up one another to love and good works... encouraging one another, and all the more as [we] see the Day
+        drawing near". Hebrews 10:24-25 (ESV)
+      </p>
+      <p>
+        ALL events hosted by Eagle Valley (including the Focus (IN) events) are free and open to the public.
+      </p>
+    </div>
+
+    <!-- Event Info -->
+    <div class="w3-quarter w3-padding">
+      <div class="w3-card w3-white w3-padding-16 w3-padding-top-none">
+        <img src="focus-in/content/JanuarySocial.jpg" alt="January Social" style="width:100%">
+        <div class="w3-container">
+          <h3>January Social</h3>
+          <h4 style="font-style: italic">Winter Fun Party</h4>
+          <p>January 12th starting at 1 PM</p>
+          <p>Come ready to:</p>
+          <p>-play games of all kinds</p>
+          <p>-drink coffee/hot chocolate</p>
+          <p>-decorate gingerbread</p>
+          <p>-eat HOMEMADE snacks!</p>
+          <div class="w3-center">
+            <a href="#contact">
+              <button class="w3-button w3-teal w3-padding-large">RSVP</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-quarter w3-padding">
+      <div class="w3-card w3-white w3-padding-16 w3-padding-top-none">
+        <img src="focus-in/content/FebruarySocial.jpg" alt="February Social" style="width:100%">
+        <div class="w3-container">
+          <h3>February Social</h3>
+          <h4 style="font-style: italic">TBD</h4>
+          <p>February 16th</p>
+          <p>
+            We’ll present a couple options to everyone who attends the January Social Event. RSVP in order to be updated when the activity
+            is decided.
+          </p>
+          <div class="w3-center">
+            <a href="#contact">
+              <button class="w3-button w3-teal w3-padding-large">RSVP</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-quarter w3-padding">
+      <div class="w3-card w3-white w3-padding-16 w3-padding-top-none">
+        <img src="focus-in/content/MarchConference.jpg" alt="March Conference" style="width:100%">
+        <div class="w3-container">
+          <h3>March Conference</h3>
+          <h4 style="font-style: italic">Focus (IN) Conference</h4>
+          <p>March 30th registration starting at 9 AM</p>
+          <p>Topic: Rejoicing in God’s Providence</p>
+          <p>Coffee Bar and homemade lunch provided.</p>
+          <div class="w3-center">
+            <a href="#contact">
+              <button class="w3-button w3-teal w3-padding-large">RSVP</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Conference/Speaker Container -->
+  <div class="w3-container w3-padding-64 w3-center" id="conference">
+
+    <!-- Conference Info -->
+    <h2 class="w3-left-align">Focus (IN) Conference</h2>
+    <p class="w3-left-align">
+      Eagle Valley Church of Christ is SO excited to announce our new conference for young adults in Indiana. The focus of the
+      conference this year is "Rejoicing in God’s Providence". We will be diving deep into God’s Word during keynote presentations,
+      discussion groups, and a workshop, as well as worshipping Him through prayer, song, and fellowship.
+    </p>
+    <p class="w3-left-align">
+      We’ll start the day with a Coffee Bar and Registration from 9-10 AM. Our worship and study will begin at 10 AM and end around
+      2 PM, with a break for lunch made by the members of the congregation around noon.
+    </p>
+    <p class="w3-left-align">
+      Our prayer is that this conference will be more than just an event. We pray that God will use this event to spark hope, ideas,
+      and opportunities for Christians throughout the state to work together in His Kingdom.
+    </p>
+    <p class="w3-left-align">
+      If you have any questions about the conference, please
+      <a href="#contact" style="color: blue">contact us</a> using the form below. If you plan to attend any of the events, we’d appreciate an
+      <a href="#contact" style="color: blue">RSVP</a>, so we can plan for plenty of food.
+    </p>
+
+    <!--Speakers, will add later-->
+    <!-- <div class="w3-row w3-padding-32">
+
+      <div class="w3-half">
+        <img src="./focus-in/content/avatar.jpg" alt="Boss" style="width:45%;max-width: 200px" class="w3-circle w3-hover-opacity">
+        <h3>Image 1</h3>
+        <p>Image 1 Info</p>
+      </div>
+
+      <div class="w3-half">
+        <img src="./focus-in/content/avatar.jpg" alt="Boss" style="width:45%;max-width: 200px" class="w3-circle w3-hover-opacity">
+        <h3>Image 2</h3>
+        <p>Image 2 Info</p>
+      </div>
+
+    </div> -->
+
+  </div>
+
+  <!-- Location/Contact Container -->
+  <div class="w3-container w3-theme-l5 w3-padding">
+    <div class="w3-row">
+
+      <!-- Location/Address Info -->
+      <div class="w3-col m5 w3-padding-64 w3-padding w3-padding-bottom-none" id="location">
+
+        <div class="w3-padding-16">
+          <span class="w3-xlarge w3-border-teal w3-bottombar">Location</span>
+        </div>
+
+        <table class="w3-padding">
+          <tr>
+            <td class="w3-padding-small">
+              <i class="fa fa-map-marker w3-text-teal w3-xlarge"></i>
+            </td>
+            <td>
+              <a href="https://goo.gl/maps/pCbgdcA5Z4p" style="color: blue" target="_blank">8465 Crawfordsville Rd, Indianapolis, IN 46234</a>
+            </td>
+          </tr>
+          <!-- <tr>
+            <td class="w3-padding-small">
+              <i class="fa fa-phone w3-text-teal w3-xlarge"></i>
+            </td>
+            <td>(555)-555-5555</td>
+          </tr> -->
+          <!-- <tr>
+            <td class="w3-padding-small">
+              <i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i>
+            </td>
+            <td>test@test.com</td>
+          </tr> -->
+        </table>
+
+        <!-- Google Map -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12259.31535294724!2d-86.3116469!3d39.810831!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x64efa476da220592!2sEagle+Valley+Church+of+Christ!5e0!3m2!1sen!2sus!4v1544811908274"
+          width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+      </div>
+
+      <!-- Contact/RSVP Form -->
+      <div id="contact" class="w3-col m7 w3-padding-64 w3-padding">
+
+        <div class="w3-padding-16">
+          <span class="w3-xlarge w3-border-teal w3-bottombar">Contact Us / RSVP</span>
+        </div>
+
+        <form netlify method="POST" name="rsvp-contact-form" id="rsvp-contact-form" onsubmit="return showSubmission();" class="w3-container w3-card-4 w3-padding-16 w3-white">
+
+          <div class="w3-section">
+            <label>Name*</label>
+            <input class="w3-input" type="text" name="Name" placeholder="Name (Required)" required>
+          </div>
+
+          <div class="w3-section">
+            <label>Email*</label>
+            <input class="w3-input" type="email" name="Email" placeholder="Email (Required)" required>
+          </div>
+
+          <div class="w3-section">
+            <label>Congregation</label>
+            <input class="w3-input" type="text" name="Congregation" placeholder="Congregation (Optional)">
+          </div>
+
+          <div class="w3-section">
+            <p>Please check the events you plan to attend:</p>
+            <input class="w3-check" type="checkbox" name="social1">
+            <label>January Social - 12th at 1 PM</label>
+            <br>
+            <input class="w3-check" type="checkbox" name="social2">
+            <label>February Social - 16th</label>
+            <br>
+            <input class="w3-check" type="checkbox" name="conference">
+            <label>March Conference - 30th registration starts at 9 AM</label>
+            <br>
+          </div>
+
+          <div class="w3-section">
+            <label>Question/Comment</label>
+            <textarea class="w3-input" name="Message" cols="40" rows="6" placeholder="Please enter your message here..."></textarea>
+          </div>
+
+          <button type="submit" class="w3-button w3-right w3-theme">Send</button>
+          <button type="reset" class="w3-button w3-right w3-theme w3-margin-right">Reset</button>
+          <p id="formSubmit" style="display: none">Please wait... (If the form does not submit, then please send us an email or give us a call)</p>
+
+        </form>
+
+        <!--handle form submission (show wait element)-->
+        <script>
+          function showSubmission() {
+            document.getElementById('formSubmit').style.display = 'block';
+          }
+        </script>
+
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
+
+    <!-- Facebook Link -->
+    <h4>Join the Facebook Event</h4>
+    <a class="w3-button w3-large w3-teal" href="https://www.facebook.com/events/298685534313571" title="Facebook" target="_blank">
+      <i class="fa fa-facebook"></i>
+    </a>
+
+    <!-- Spacer needed for Go To top button and Facebook link to display properly -->
+    <p></p>
+
+    <!-- Go To Top button -->
+    <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right w3-hide-small">
+      <span class="w3-text w3-padding w3-teal w3-hide-small">Go To Top</span>
+      <a class="w3-button w3-theme" href="#myPage">
+        <span class="w3-xlarge">
+          <i class="fa fa-chevron-circle-up"></i>
+        </span>
+      </a>
+    </div>
+
+  </footer>
+
+  <!-- Small Screen Navigation Script -->
+  <script>
+
+    // Used to toggle the menu on smaller screens when clicking on the menu button
+    // It will dismiss the menu if target was not menu button
+    function openNav(ev) {
+
+      var target = ev.target;
+      var menuButton = document.getElementById("menuButton");
+      var navDemo = document.getElementById("navDemo");
+
+      //if the menu is not currently being shown...
+      if (navDemo.className.indexOf("w3-show") == -1) {
+
+        //...and if the target was the menu button, or the target's parent was the menu button...
+        if (target == menuButton || target.parentElement == menuButton) {
+
+          //...then show the menu
+          navDemo.className += " w3-show";
+
+        }
+
+      }
+
+      //else the menu was shown, hide the menu
+      else {
+        navDemo.className = navDemo.className.replace(" w3-show", "");
+      }
+
+    }
+
+    //add click event listener to dom to toggle menu display (for smaller screens)
+    document.addEventListener("click", openNav);
+
+  </script>
+
+  <!--intialize smooth scroll-->
+  <script>
+    var scroll = new SmoothScroll('a[href*="#"]');
+  </script>
+
+</body>
+
+</html>
