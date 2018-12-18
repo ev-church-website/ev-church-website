@@ -76,7 +76,7 @@ export default ({ children }) =>
           </HeaderLink>
 
           <HeaderLink to="/focus-in">
-            FOCUS-IN
+            Focus (IN)
           </HeaderLink>
 
         </div>
