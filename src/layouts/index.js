@@ -75,6 +75,10 @@ export default ({ children }) =>
             CONTACT
           </HeaderLink>
 
+          <HeaderLink to="/focus-in">
+            FOCUS-IN
+          </HeaderLink>
+
         </div>
 
       </header>
