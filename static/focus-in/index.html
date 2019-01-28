@@ -8,6 +8,12 @@
   <title>Focus (IN)</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <!-- Open Graph -->
+  <meta property="og:title" content="Focus (IN)" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://evchurchofchrist.org/Focus-IN" />
+  <meta property="og:image" content="https://evchurchofchrist.org/Focus-IN/content/logo_full.jpg" />
+
   <!-- Favicon -->
   <link rel="shortcut icon" type="image/png" href="content/favicon.png" />
 
@@ -19,12 +25,12 @@
   <!-- Scripts -->
   <!-- for smooth scrolling -->
   <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@14.0.0/dist/smooth-scroll.polyfills.min.js"></script>
-  
+
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-69196237-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
 
     gtag('config', 'UA-69196237-1');
@@ -43,6 +49,7 @@
       <a href="#" class="w3-bar-item w3-button w3-teal">
         <i class="fa fa-home w3-margin-right"></i>Focus (IN)</a>
       <a href="#about" class="w3-bar-item w3-button w3-hide-small w3-hover-white">About</a>
+      <a href="#events" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Events</a>
       <a href="#conference" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Conference</a>
       <a href="#location" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Location</a>
       <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contact</a>
@@ -52,6 +59,7 @@
     <!-- Navbar on small screens -->
     <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
       <a href="#about" class="w3-bar-item w3-button">About</a>
+      <a href="#events" class="w3-bar-item w3-button">Events</a>
       <a href="#conference" class="w3-bar-item w3-button">Conference</a>
       <a href="#location" class="w3-bar-item w3-button">Location</a>
       <a href="#contact" class="w3-bar-item w3-button">Contact</a>
@@ -72,10 +80,10 @@
   </div>
 
   <!-- About Row -->
-  <div class="w3-row-padding w3-padding-64 w3-theme-l1" id="about">
+  <div class="w3-row w3-padding-64 w3-theme-l1 w3-padding-bottom-none" id="about">
 
     <!-- About Info -->
-    <div class="w3-quarter w3-padding">
+    <div class="w3-padding w3-padding-bottom-none">
       <h2>Mission</h2>
       <p>
         Our mission is to unite Christian young adults across Indiana in our focus on Christ. We will do this by studying the Word
@@ -92,40 +100,25 @@
         ALL events hosted by Eagle Valley (including the Focus (IN) events) are free and open to the public.
       </p>
     </div>
+  </div>
+
+  <!-- Event Row -->
+  <div class="w3-cell-row w3-row-padding w3-padding-64 w3-theme-l1" id="events">
 
     <!-- Event Info -->
-    <div class="w3-quarter w3-padding">
-      <div class="w3-card w3-white w3-padding-16 w3-padding-top-none">
-        <img src="content/JanuarySocial.jpg" alt="January Social" style="width:100%">
-        <div class="w3-container">
-          <h3>January Social</h3>
-          <h4 style="font-style: italic">Winter Fun Party</h4>
-          <p>January 12th starting at 1 PM</p>
-          <p>Come ready to:</p>
-          <p>-play games of all kinds</p>
-          <p>-drink coffee/hot chocolate</p>
-          <p>-decorate gingerbread</p>
-          <p>-eat HOMEMADE snacks!</p>
-          <div class="w3-center">
-            <a href="#contact">
-              <button class="w3-button w3-teal w3-padding-large">RSVP</button>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="w3-quarter w3-padding">
+    <div class="w3-cell w3-padding w3-mobile w3-container" style="width: 50%">
       <div class="w3-card w3-white w3-padding-16 w3-padding-top-none">
         <img src="content/FebruarySocial.jpg" alt="February Social" style="width:100%">
         <div class="w3-container">
           <h3>February Social</h3>
-          <h4 style="font-style: italic">TBD</h4>
-          <p>February 16th</p>
+          <h4 style="font-style: italic">Game Day</h4>
+          <p>February 16th starting at 1 PM</p>
           <p>
-            We’ll present a couple options to everyone who attends the January Social Event. RSVP in order to be updated when the activity
-            is decided.
+            Are you excited to play all sorts of games with friends? Want to eat some HOMEMADE snacks? Then you need to come to this
+            completely free event! Please
+            <a href="#contact">RSVP Now</a> so we can plan accordingly.
           </p>
+          <p>This event will conclude at 5:30 PM. Afterwards, you are welcome to stay for a Euchre Tournament with the rest of the Eagle Valley congregation.</p>
           <div class="w3-center">
             <a href="#contact">
               <button class="w3-button w3-teal w3-padding-large">RSVP</button>
@@ -135,7 +128,7 @@
       </div>
     </div>
 
-    <div class="w3-quarter w3-padding">
+    <div class="w3-cell w3-padding w3-mobile w3-container" style="width: 50%">
       <div class="w3-card w3-white w3-padding-16 w3-padding-top-none">
         <img src="content/MarchConference.jpg" alt="March Conference" style="width:100%">
         <div class="w3-container">
@@ -144,6 +137,9 @@
           <p>March 30th registration starting at 9 AM</p>
           <p>Topic: Rejoicing in God’s Providence</p>
           <p>Coffee Bar and homemade lunch provided.</p>
+          <p>
+            <a href="#conference">More details below...</a>
+          </p>
           <div class="w3-center">
             <a href="#contact">
               <button class="w3-button w3-teal w3-padding-large">RSVP</button>
@@ -159,7 +155,7 @@
   <div class="w3-container w3-padding-64 w3-center" id="conference">
 
     <!-- Conference Info -->
-    <h2 class="w3-left-align">Focus (IN) Conference</h2>
+    <h2 class="w3-left-align">Focus (IN) March Conference</h2>
     <p class="w3-left-align">
       Eagle Valley Church of Christ is SO excited to announce our new conference for young adults in Indiana. The focus of the
       conference this year is "Rejoicing in God’s Providence". We will be diving deep into God’s Word during presentations,
@@ -175,8 +171,8 @@
     </p>
     <p class="w3-left-align">
       If you have any questions about the conference, please
-      <a href="#contact" style="color: blue">contact us</a> using the form below. If you plan to attend any of the events, we’d appreciate an
-      <a href="#contact" style="color: blue">RSVP</a>, so we can plan for plenty of food.
+      <a href="#contact">contact us</a> using the form below. If you plan to attend any of the events, we’d appreciate an
+      <a href="#contact">RSVP</a>, so we can plan for plenty of food.
     </p>
 
     <!--Speakers, will add later-->
@@ -215,7 +211,7 @@
               <i class="fa fa-map-marker w3-text-teal w3-xlarge"></i>
             </td>
             <td>
-              <a href="https://goo.gl/maps/pCbgdcA5Z4p" style="color: blue" target="_blank">8465 Crawfordsville Rd, Indianapolis, IN 46234</a>
+              <a href="https://goo.gl/maps/pCbgdcA5Z4p" target="_blank">8465 Crawfordsville Rd, Indianapolis, IN 46234</a>
             </td>
           </tr>
           <!-- <tr>
@@ -228,7 +224,9 @@
             <td class="w3-padding-small">
               <i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i>
             </td>
-            <td><a href="mailto:focusin@evchurchofchrist.org" style="color: blue">focusin@evchurchofchrist.org</a></td>
+            <td>
+              <a href="mailto:focusin@evchurchofchrist.org">focusin@evchurchofchrist.org</a>
+            </td>
           </tr>
         </table>
 
@@ -264,11 +262,8 @@
 
           <div class="w3-section">
             <p>Please check the events you plan to attend:</p>
-            <input class="w3-check" type="checkbox" name="JanuarySocial">
-            <label>January Social - 12th at 1 PM</label>
-            <br>
             <input class="w3-check" type="checkbox" name="FebruarySocial">
-            <label>February Social - 16th</label>
+            <label>February Social - 16th at 1 PM</label>
             <br>
             <input class="w3-check" type="checkbox" name="MarchConference">
             <label>March Conference - 30th registration starts at 9 AM</label>
@@ -277,7 +272,7 @@
 
           <div class="w3-section">
             <label>Question/Comment</label>
-            <textarea class="w3-input" name="Message" cols="40" rows="6" placeholder="Please enter your message here..."></textarea>
+            <textarea class="w3-input" name="Message" cols="40" rows="6" placeholder="Please enter your question or comment here... (Optional)"></textarea>
           </div>
 
           <button type="submit" class="w3-button w3-right w3-theme">Send</button>
@@ -303,7 +298,7 @@
 
     <!-- Facebook Link -->
     <h4>Join the Facebook Event</h4>
-    <a class="w3-button w3-large w3-teal" href="https://www.facebook.com/events/298685534313571" title="Facebook" target="_blank">
+    <a class="w3-button w3-large w3-teal" href="https://www.facebook.com/events/374657623336820" title="Facebook" target="_blank">
       <i class="fa fa-facebook"></i>
     </a>
 
