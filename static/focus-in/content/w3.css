@@ -236,3 +236,4 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 
 /* My CSS */
 a{color: blue}
+.w3-card-dark{box-shadow:0 2px 10px 0 rgba(0,0,0,0.5),0 2px 20px 0 rgba(0,0,0,0.49)}
