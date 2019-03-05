@@ -9,6 +9,7 @@ import EventsSection from '../content-sections/EventsSection.js';
 import ContactUsSection from '../content-sections/ContactUsSection.js';
 import ClassesSection from '../content-sections/ClassesSection';
 import MissionsSection from '../content-sections/MissionsSection';
+import Media from '../styles/Media'
 
 export default class Index extends React.Component {
 
@@ -25,6 +26,24 @@ export default class Index extends React.Component {
             <img css={{marginBottom: 0, width:'100%'}} src={congregation} />
 
           </div>
+
+        </div>
+
+        <div css={{
+          display: 'none',
+          [Media.phone]: {
+            backgroundColor: Colors.grayBackground,
+            display: 'flex',
+            justifyContent: 'center',
+            padding: '1rem',
+            position: 'relative',
+            top: -10,
+          }
+        }}>
+
+          <a href="/focus-in" css={{color: Colors.linkBlue}}>
+            Learn about the Focus (IN) Conference
+          </a>
 
         </div>
 
