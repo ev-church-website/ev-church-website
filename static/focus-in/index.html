@@ -111,17 +111,12 @@
     <!-- Event Info -->
     <div class="w3-cell w3-padding w3-mobile w3-container" style="width: 50%">
       <div class="w3-card w3-white w3-padding-16 w3-padding-top-none">
-        <img src="content/movie.jpeg" alt="May Event" style="width:100%">
+        <img src="content/More-Events.jpg" alt="May Event" style="width:100%">
         <div class="w3-container">
-          <h3>Movie Night</h3>
-          <h4 style="font-style: italic">May 11th starting at 7pm</h4>
-          <p>Food (most likely pizza and popcorn) and drinks will be provided</p>
-          <p>Feel free to invite any friends to come too!</p>
-          <div class="w3-center">
-            <a href="#contact">
-              <button class="w3-button w3-teal w3-padding-large">RSVP</button>
-            </a>
-          </div>
+          <p>We are always trying to plan future events to get to know other young adults better.</p>
+          <p>If you would like to know more information about our next event, then
+            <a href="https://www.facebook.com/groups/1331931766943577">join our Facebook Group</a> or
+            <a href="#contact">sign up for email updates</a>.</p>
         </div>
       </div>
     </div>
@@ -132,10 +127,10 @@
   <div class="w3-container w3-padding-64 w3-center" id="conference">
 
     <!-- Conference Info -->
-    <h2 class="w3-left-align">Focus (IN) March Conference - Thanks for Coming!</h2>
+    <h2 class="w3-left-align">Focus (IN) August Conference</h2>
     <p class="w3-left-align">
-      We are extremely thankful for everyone who came to our conference and made it a smashing success! If you would like to stay
-      up to date with future events we are currently planning, then please join our
+      Our next Focus (IN) conference is currently being planned for August 2019. If you would like to stay up to date with this
+      event or others we are currently planning, then please join our
       <a href="https://www.facebook.com/groups/1331931766943577">Facebook group</a>!
     </p>
 
@@ -183,14 +178,14 @@
 
       </div>
 
-      <!-- Contact/RSVP Form -->
+      <!-- Contact Form -->
       <div id="contact" class="w3-col m7 w3-padding-64 w3-padding">
 
         <div class="w3-padding-16">
-          <span class="w3-xlarge w3-border-teal w3-bottombar">Contact Us / RSVP</span>
+          <span class="w3-xlarge w3-border-teal w3-bottombar">Contact Us</span>
         </div>
 
-        <form netlify method="POST" name="rsvp-contact-form" id="rsvp-contact-form" onsubmit="return showSubmission();" class="w3-container w3-card-4 w3-padding-16 w3-white">
+        <form netlify method="POST" name="contact-form" id="contact-form" onsubmit="return showSubmission();" class="w3-container w3-card-4 w3-padding-16 w3-white">
 
           <div class="w3-section">
             <label>Name*</label>
@@ -209,9 +204,12 @@
 
           <!-- Event RSVP -->
           <div class="w3-section">
-            <p>Please check the events you plan to attend:</p>
-            <input class="w3-check" type="checkbox" name="MayEvent">
-            <label>Movie Night - May 11th starting at 7pm</label>
+            <p>Would you like to recieve updates about future Focus (IN) events by email?</p>
+            <input class="w3-radio" type="radio" name="EmailSignup" value="yes" checked>
+            <label>Yes! I would love to get updates by email!</label>
+            <br/>
+            <input class="w3-radio" type="radio" name="EmailSignup" value="no">
+            <label>No, I do not wish to get updates by email</label>
             <br>
           </div>
 
