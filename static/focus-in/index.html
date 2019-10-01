@@ -217,7 +217,7 @@
           </button>
           <p id="formSubmit" style="display: none">
             Please wait... (If the form does not submit, then please send us
-            an email or give us a call)
+            an email)
           </p>
         </form>
 
@@ -326,14 +326,20 @@
 
     //creating Events (imgSrc, imgAlt, Event Title, Event Details (HTML))
     createEvent(
-      "content/Website Log Splitting Service Project.jpg",
-      "Log Splitting Service Project",
-      "Log Splitting Service Project - TBD",
-      `<p>This event is currently being rescheduled. Please RSVP if you would like information as soon as it is available.</p>`
+      "content/Hockey Event.jpg",
+      "Indy Fuel Hockey Game",
+      "Indy Fuel Hockey Game - October 4th",
+      `<p>The Game will begin at 6:35pm at the Indiana Farmers Coliseum.</p>`
     );
 
     //Clean out Event RSVP Section if there are not any events
     if (document.getElementById("EventRSVP").innerHTML == "") {
+      createEvent(
+        "content/Coming Soon.jpg",
+        "Coming Soon",
+        "More Events Coming Soon!",
+        "<p>There are currently no events planned. But, not to worry, we will get some more created soon! Fill out the contact form below to get notified as soon as we do.</p>"
+      );
       document.getElementById("EventRSVPSection").innerHTML = "";
     }
   </script>
