@@ -107,20 +107,19 @@
 
   <!-- Event Row -->
   <div class="w3-cell-row w3-row-padding w3-padding-64 w3-theme-l1" id="events">
-    <!-- Event Info -->
-    <div class="w3-cell w3-padding w3-mobile w3-container" style="width: 45%" id="EventDetails"></div>
+    <!-- Event Info (in js script at end of file) -->
   </div>
 
   <!-- Conference/Speaker Container -->
   <div class="w3-container w3-padding-64 w3-center" id="conference">
     <!-- Conference Info -->
     <h2 class="w3-left-align">
-      Focus (IN) August Conference - Thanks for Coming!
+      Focus (IN) March 2020 Conference
     </h2>
     <p class="w3-left-align">
-      Thank you for coming to our August Conference and making it such a huge
-      success! If you would like to stay up to date with other events we are
-      currently planning, then please join our
+      We are currently planning for the March 2020 Conference on March 28,
+      2020. If you would like to stay up to date with this event or others we
+      are currently planning, then please join our
       <a href="https://www.facebook.com/groups/1331931766943577">Facebook group</a>!
     </p>
   </div>
@@ -289,15 +288,32 @@
 
   <!-- add in event details with javascript -->
   <script>
-    //Takes in the img url to show, the img alt text, the title of the event, and any
-    //Event details (HTML markup supported). Then creates an event and adds it to the event section
+    //Takes in the img url to show, the title of the event,
+    //the total amount of events to display (used to calculate event width),
+    //a boolean to decide whehter or not to display the event on the site (if false, just show it in RSVP section)
+    //and any Event details (HTML markup supported). Then creates an event and adds it to the event section
     //of the page while also adding its rsvp info to the contact form on the page
-    function createEvent(imgSrc, imgAlt, eventTitle, eventDetails) {
-      //creating the event element
-      var event = document.createElement("div");
-      event.className = `w3-card w3-white w3-padding-16 w3-padding-top-none`;
-      event.innerHTML = `
-          <img src="${imgSrc}" alt="${imgAlt}" style="width:100%">
+    function createEvent(
+      imgSrc,
+      eventTitle,
+      totalEvents,
+      showEvent,
+      eventDetails
+    ) {
+      //if total events is 1 or less, then set it to 2
+      //so that the width of the eventContainer will be 50%
+      if (totalEvents <= 1) {
+        totalEvents = 2;
+      }
+      //scale total events to a percentage
+      totalEvents = 100 / totalEvents;
+      //if showEvent is false, then skip event creation
+      if (showEvent) {
+        //creating the event element
+        var event = document.createElement("div");
+        event.className = `w3-card w3-white w3-padding-16 w3-padding-top-none`;
+        event.innerHTML = `
+          <img src="${imgSrc}" alt="${eventTitle}" style="width:100%">
           <div class="w3-container">
             <h4 style="font-style: italic">${eventTitle}</h4>
             ${eventDetails}
@@ -308,8 +324,13 @@
             </div>
           </div>
       `;
-      //adding the event element to the page
-      document.getElementById("EventDetails").appendChild(event);
+        var eventContainer = document.createElement("div");
+        eventContainer.className = `w3-cell w3-padding w3-mobile w3-container`;
+        eventContainer.style = `width: ${totalEvents}%`;
+        //adding the event element to the page
+        eventContainer.appendChild(event);
+        document.getElementById("events").appendChild(eventContainer);
+      }
 
       //creating then adding the event rsvp info to the contact form
       var eventRSVP = document.createElement("span");
@@ -321,23 +342,46 @@
       document.getElementById("EventRSVP").appendChild(eventRSVP);
     }
 
-    //Changes the width of the event parent element, should be set to 45% if only one event
-    document.getElementById("EventDetails").style = "width: 45%";
-
-    //creating Events (imgSrc, imgAlt, Event Title, Event Details (HTML))
+    //creating Events (imgSrc, Event Title,, totalEvents, showEvent, Event Details (HTML))
     createEvent(
-      "content/Hockey Event.jpg",
-      "Indy Fuel Hockey Game",
-      "Indy Fuel Hockey Game - October 4th",
-      `<p>The Game will begin at 6:35pm at the Indiana Farmers Coliseum.</p>`
+      "content/Let's go bowling!.jpg",
+      "Bowling - November 16th",
+      3,
+      true,
+      `<p>On November 16th, Focus(IN) is going bowling! We will be bowling around 4PM at Royal Pin Western Bowl (<a href="https://goo.gl/maps/s787teNwSbPV7Zqg9">6441 West Washington Street, Indianapolis, IN 46241</a>). Afterwards, we will be going out to dinner! If you have any questions, please don't hesitate to reach out!</p>`
     );
 
-    //Clean out Event RSVP Section if there are not any events
+    createEvent(
+      "content/Christmas Party.jpg",
+      "Christmas Party - Decemember 14th",
+      3,
+      true,
+      `<p>More details to come. RSVP to get notified as soon as they are available!</p>`
+    );
+
+    createEvent(
+      "content/Singing Day.jpg",
+      "Singing Day - January 11th 2020",
+      3,
+      true,
+      `<p>More details to come. RSVP to get notified as soon as they are available!</p>`
+    );
+
+    //conference event
+    createEvent(
+      "null",
+      "March 2020 Conference - March 28th 2020",
+      0,
+      false,
+      `<p>null</p>`
+    );
+
+    //Clean out Event RSVP Section and add a default Coming Soon notification if there are not any events
     if (document.getElementById("EventRSVP").innerHTML == "") {
       createEvent(
         "content/Coming Soon.jpg",
-        "Coming Soon",
         "More Events Coming Soon!",
+        1,
         "<p>There are currently no events planned. But, not to worry, we will get some more created soon! Fill out the contact form below to get notified as soon as we do.</p>"
       );
       document.getElementById("EventRSVPSection").innerHTML = "";
