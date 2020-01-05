@@ -235,5 +235,9 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .w3-border-pale-yellow,.w3-hover-border-pale-yellow:hover{border-color:#ffffcc!important}.w3-border-pale-blue,.w3-hover-border-pale-blue:hover{border-color:#e7ffff!important}
 
 /* My CSS */
-a{color: blue}
+a:link {text-decoration: underline; color: blue;}
+a:visited {text-decoration: none; color: purple;}
+a:hover {text-decoration: underline; background-color: lightgray;}
+a:active {text-decoration: underline; background-color: lightgray;}
+.w3-top >* a {text-decoration: none; color: white;}
 .w3-card-dark{box-shadow:0 2px 10px 0 rgba(0,0,0,0.5),0 2px 20px 0 rgba(0,0,0,0.49)}
