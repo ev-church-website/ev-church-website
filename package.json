@@ -19,6 +19,7 @@
     "gatsby-transformer-json": "^1.0.16",
     "immutability-helper": "^2.6.6",
     "marked": "^0.3.17",
+    "moment": "^2.25.3",
     "prop-types": "^15.6.1",
     "react-headroom": "^2.2.2",
     "react-helmet": "^5.2.0",
