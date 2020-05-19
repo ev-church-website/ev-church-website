@@ -73,6 +73,8 @@ export default class EventsList extends React.Component {
             return <div style={{ textAlign: 'center' }}>There are no events planned right now.</div>;
         }
         else {
+            // sorting events from earliest to latest start time
+            events.sort((a, b) => { return getStartTime(a).subtract(getStartTime(b)) })
             return (
                 <div>
                     {/* Mobile Display */}
