@@ -170,7 +170,7 @@ export default class Index extends React.Component {
 
         <div id="events">
 
-          <EventsSection data={this.props.data.allEventsJson.edges.map(edge => edge.node)}/>
+          <EventsSection/>
 
         </div>
 
@@ -186,22 +186,3 @@ export default class Index extends React.Component {
 
   }
 }
-
-
-//TODO: break this up?
-export const query = graphql`
-  query AllDataQuery {
-  
-    allEventsJson(sort: {fields: [date]}) {
-      edges {
-        node {
-          title
-          date
-          description
-        }
-      }
-    }
-    
-    
-  }
-`;
