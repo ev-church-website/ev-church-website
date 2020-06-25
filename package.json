@@ -17,13 +17,13 @@
     "gatsby-plugin-typography": "^1.7.17",
     "gatsby-source-filesystem": "^1.5.26",
     "gatsby-transformer-json": "^1.0.16",
-    "immutability-helper": "^2.6.6",
+    "immutability-helper": "^2.9.1",
     "marked": "^0.3.17",
-    "moment": "^2.25.3",
-    "prop-types": "^15.6.1",
-    "react-headroom": "^2.2.2",
-    "react-helmet": "^5.2.0",
+    "moment": "^2.27.0",
+    "prop-types": "^15.7.2",
+    "react-headroom": "^2.2.8",
+    "react-helmet": "^5.2.1",
     "smooth-scroll": "^12.1.5",
-    "typography-theme-bootstrap": "^0.16.7"
+    "typography-theme-bootstrap": "^0.16.19"
   }
 }
