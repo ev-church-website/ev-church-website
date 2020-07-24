@@ -348,7 +348,13 @@
 
     //creating Events (imgSrc, Event Title, totalEvents, showEvent, Event Details (HTML))
 
-    // no events to create right now
+    createEvent(
+      'content/outdoor-aug-event.jpg',
+      'Outdoor Event - August 22nd',
+      1,
+      true,
+      '<p>Focus (IN) is planning an outdoor event for Saturday, August 22nd. Please mark your calendars and get your hiking boots ready! More details will be coming later.</p>'
+    )
 
     //Clean out Event RSVP Section and add a default Coming Soon notification if there are not any events
     if (document.getElementById("EventRSVP").innerHTML == "") {
