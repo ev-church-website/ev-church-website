@@ -111,15 +111,21 @@
   </div>
 
   <!-- Conference/Speaker Container -->
-  <!-- Banner Image -->
-  <img src="content/Event Image - July 2020.jpg" style="width: 100%; max-height: 400px" id="conference" />
+  <!-- Spacer for image -->
+  <p class="w3-padding" id="conference"></p>
   <div class="w3-container w3-padding-64 w3-center w3-padding-top-none w3-padding-bottom-none">
-    <div class="w3-container w3-padding-64 w3-center w3-padding-top-none w3-padding-bottom-none" id="conference">
+    <div class="w3-container w3-padding-64 w3-center w3-padding-top-none w3-padding-bottom-none">
       <!-- Conference Info -->
-      <h2 class="w3-left-align">Focus (IN) July Conference - July 18th</h2>
+      <h2 class="w3-left-align">Focus (IN) March 2021 Conference</h2>
       <p class="w3-left-align">
-        Thank you to everyone who was able to make it to the conference! We really enjoyed having you, and we look
-        forward to seeing you at our future events!
+        Our next Focus (IN) conference is currently being planned for March 27, 2021. It will be held at Cloverdale
+        Church of Christ <a href="https://goo.gl/maps/XCwNxuAdzBnJ3ddg6" target="_blank">(155 N Main St, Cloverdale, IN
+          46120)</a>.
+      </p>
+      <p class="w3-left-align">
+        If you have any questions about the conference, please
+        <a href="#contact">contact us</a> using the form below. We would appreciate an
+        <a href="#contact">RSVP</a> so we can plan for plenty of food.
       </p>
       <p class="w3-left-align">If you would like to stay up to date with the events we are currently planning,
         then please join our
@@ -349,11 +355,25 @@
     //creating Events (imgSrc, Event Title, totalEvents, showEvent, Event Details (HTML))
 
     createEvent(
-      'content/OctEvent.jpg',
-      'Fall Fun - October 24th',
-      1,
+      'content/nov-event.jpg',
+      'Movie Night - November 14th',
+      3,
       true,
-      `<p>Time to get excited! The October 24th event will begin at 5:30 PM. There will be pumpkin carving, a bonfire (weather permitting), and lots of fun! Food will also be provided. Please RSVP for further details.</p>`
+      `<p>This Saturday is our movie night at <a href="https://goo.gl/maps/pCbgdcA5Z4p" target="_blank">Eagle Valley</a>! It will begin at 6PM and food will be provided. Feel free to bring a fuzzy blanket or a pillow if you want! Masks will be provided if you forget to bring your own!</p>`
+    )
+    createEvent(
+      'content/Save the dates.jpg',
+      'Christmas Party - December 5th',
+      3,
+      true,
+      `<p>More details to come.</p>`
+    )
+    createEvent(
+      'content/Save the dates.jpg',
+      'March Conference - March 27th, 2021',
+      3,
+      true,
+      `<p>See <a href="#conference">conference section</a> for more details.</p>`
     )
 
     //Clean out Event RSVP Section and add a default Coming Soon notification if there are not any events
