@@ -41,6 +41,9 @@
 
     gtag("config", "UA-69196237-1");
   </script>
+
+  <!-- moment.js (https://momentjs.com/) -->
+  <script src="content/moment.js"></script>
 </head>
 
 <body id="myPage">
@@ -305,6 +308,60 @@
 
   <!-- add in event details with javascript -->
   <script>
+
+    // Events helper functions to help parse return events from Google Calendar API call
+
+    function getEndTime(event) {
+      let date = event.end.date || event.end.dateTime
+      let dateMoment = moment(date)
+
+      // we need to subtract a day from all day events since Google returns the end date of an all day event as the next date
+      // for example, if a single all day event started on Jan 1 and ended on Jan 2, then Google would return an end date of Jan 3
+      if (allDayEvent(event)) {
+        dateMoment.subtract(1, 'day')
+      }
+
+      return dateMoment
+    }
+
+    function getStartTime(event) {
+      let date = event.start.date || event.start.dateTime
+      return moment(date)
+    }
+
+    function getTitle(event) {
+      return event.summary
+    }
+
+    function getDescription(event) {
+      return event.description
+    }
+
+    function allDayEvent(event) {
+      return event.end.date !== undefined
+    }
+
+    function getShortDescription(event) {
+      let shortDescription = getDescription(event)
+
+      // if the event has a description, include it
+      // google calendar requires links to be a URL so if we want a link to a section on our site
+      // then we need to prefix it as an actual URL then remove it before we show it on a page
+      // if we have a custom link (starts with http://myLink.), then remove the prefix
+      if (shortDescription) {
+        return shortDescription.toString().replace('http://myLink.', '');
+      }
+      return ""
+    }
+
+    function getImageURL(event) {
+      let eventAttachments = event.attachments
+      if (eventAttachments) {
+        return 'https://drive.google.com/uc?export=view&id=' + eventAttachments[0].fileId
+      }
+      return ''
+    }
+
     //Takes in the img url to show, the title of the event,
     //the total amount of events to display (used to calculate event width),
     //a boolean to decide whether or not to display the event on the site (if false, just show it in RSVP section)
@@ -359,34 +416,69 @@
       document.getElementById("EventRSVP").appendChild(eventRSVP);
     }
 
-    //creating Events (imgSrc, Event Title, totalEvents, showEvent, Event Details (HTML))
+    // getting events from public Google Calendar
+    // value of 1 indicates 1 month from the current date (ex: Jan 5 - Feb 5)
+    // 2 would be 2 months from the current date (ex Jan 5 - Mar 5), etc...
+    // A value of zero should not be used as that would, in theory, just get events for the current day
+    const MONTHS_FROM_NOW = 2
 
-    createEvent(
-      'content/Dec-Event.jpg',
-      'Christmas Party - December 5th',
-      2,
-      true,
-      `<p>The party will begin at 5:30 pm! Please RSVP for location and updates regarding COVID-related guidelines.</p>`
-    )
-    createEvent(
-      'content/March 2021 Conference Post Image.jpg',
-      'March Conference - March 27th, 2021',
-      2,
-      true,
-      `<p>See <a href="#conference">conference section</a> for more details.</p>`
-    )
+    let now = moment()
+    let nowAccountedForFutureMonths = moment().add(MONTHS_FROM_NOW, 'months')
 
-    //Clean out Event RSVP Section and add a default Coming Soon notification if there are not any events
-    if (document.getElementById("EventRSVP").innerHTML == "") {
-      createEvent(
-        "content/Coming-Soon.jpg",
-        "More Events Coming Soon!",
-        1,
-        true,
-        "<p>There are currently no events planned. But, not to worry, we are in the process of creating more soon! Fill out the contact form below to get notified as soon as we do.</p>"
-      );
-      document.getElementById("EventRSVPSection").innerHTML = "";
-    }
+    //for more info on google calendar api visit https://developers.google.com/calendar/v3/reference/events/list 
+    //NOTE: Since we are using an api key, you need to append ?key=API_KEY, to the end of the GET HTTP request
+    const API_KEY = 'AIzaSyCRaaVrCuYAnOsW5wcdVDV8GUFgasLnK7o'
+    const CALENDAR_ID = 'bkpll4n3hbm94kimpbtp8am4ig@group.calendar.google.com'
+    let calendar_api_url = `https://www.googleapis.com/calendar/v3/calendars/${CALENDAR_ID}/events?key=${API_KEY}`
+
+    //only show events with end times after today
+    calendar_api_url += `&timeMin=${now.toISOString()}`
+
+    //only show events with start times within the next MONTHS_FROM_NOW
+    // calendar_api_url += `&timeMax=${nowAccountedForFutureMonths.toISOString()}`
+
+    // count each recurring event as its own separate instance
+    calendar_api_url += `&singleEvents=true`
+
+    // getting the results in the current time zone of client NOTE: this does not seem to work on all day events
+    calendar_api_url += `&timeZone=${Intl.DateTimeFormat().resolvedOptions().timeZone}`
+
+    fetch(calendar_api_url)
+      .then(response => response.json()) // parse JSON from request
+      .then(
+        (result) => {
+          let events = result.items;
+          if (events === undefined) {
+            console.error("Events was undefined");
+            return;
+          }
+          events.sort((a, b) => { return getStartTime(a).subtract(getStartTime(b)) });
+          for (let index = 0; index < events.length; index++) {
+            const event = events[index];
+            //creating Events (imgSrc, Event Title, totalEvents, showEvent, Event Details (HTML))
+            createEvent(getImageURL(event), `${getTitle(event)} - ${getStartTime(event).format('MMMM d')}`, events.length, true, getShortDescription(event));
+          }
+        },
+        (error) => {
+          console.error(error);
+        }
+      )
+      .then(
+        () => {
+          //Clean out Event RSVP Section and add a default Coming Soon notification if there are not any events
+          if (document.getElementById("EventRSVP").innerHTML == "") {
+            createEvent(
+              "content/Coming-Soon.jpg",
+              "More Events Coming Soon!",
+              1,
+              true,
+              "<p>There are currently no events planned. But, not to worry, we are in the process of creating more soon! Fill out the contact form below to get notified as soon as we do.</p>"
+            );
+            document.getElementById("EventRSVPSection").innerHTML = "";
+          }
+        }
+      )
+
   </script>
 </body>
 
