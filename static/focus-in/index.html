@@ -465,7 +465,7 @@
           for (let index = 0; index < events.length; index++) {
             const event = events[index];
             //creating Events (imgSrc, Event Title, totalEvents, showEvent, Event Details (HTML))
-            createEvent(getImageURL(event), `${getTitle(event)} - ${getStartTime(event).format('MMMM d')}`, events.length, true, getShortDescription(event));
+            createEvent(getImageURL(event), `${getTitle(event)} - ${getStartTime(event).format('MMMM D')}`, events.length, true, getShortDescription(event));
           }
         },
         (error) => {
