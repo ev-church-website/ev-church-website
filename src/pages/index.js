@@ -9,6 +9,7 @@ import EventsSection from '../content-sections/EventsSection.js';
 import ContactUsSection from '../content-sections/ContactUsSection.js';
 import ClassesSection from '../content-sections/ClassesSection';
 import MissionsSection from '../content-sections/MissionsSection';
+import AlertModal from '../content-sections/AlertModal';
 import Media from '../styles/Media'
 
 export default class Index extends React.Component {
@@ -18,6 +19,8 @@ export default class Index extends React.Component {
     return (
 
       <div>
+
+        <AlertModal/>
 
         <div>
 
@@ -118,13 +121,15 @@ export default class Index extends React.Component {
               }}>
 
                 <div css={{fontWeight: 'bold'}}>Sunday Morning</div>
-                <div>9:00am - Bible Study</div>
+                <div><s>9:00am - Bible Study</s></div>
                 <div>10:00am - Worship</div>
 
                 <br />
 
+                <s>
                 <div css={{fontWeight: 'bold'}}>Sunday Evening</div>
                 <div>6:00pm - Worship</div>
+                </s>
 
                 <br />
 
