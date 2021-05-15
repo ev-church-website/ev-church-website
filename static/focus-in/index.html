@@ -42,6 +42,20 @@
     gtag("config", "UA-69196237-1");
   </script>
 
+  <!-- Google Analytics.js -->
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-69196237-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+  <!-- End Google Analytics.js -->
+
   <!-- moment.js (https://momentjs.com/) -->
   <script src="content/moment.js"></script>
 </head>
@@ -113,8 +127,8 @@
     <!-- Event Info (in js script at end of file) -->
   </div>
   <div class="w3-padding-64 w3-display-container w3-theme-l1">
-    <a
-      href="https://calendar.google.com/calendar/b/0/r?cid=YmtwbGw0bjNoYm05NGtpbXBidHA4YW00aWdAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ">
+    <a href="https://calendar.google.com/calendar/b/0/r?cid=YmtwbGw0bjNoYm05NGtpbXBidHA4YW00aWdAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ"
+      onclick="return sendGAEvent('Calendar', 'Subscribe', 'Subscribed to Focus(IN) Calendar');">
       <button class="w3-display-middle w3-button w3-teal w3-padding-large">
         <i class="fa fa-calendar-plus-o"></i>
         Add Events to Google Calendar
@@ -299,6 +313,19 @@
   <!--initialize smooth scroll-->
   <script>
     var scroll = new SmoothScroll('a[href*="#"]');
+  </script>
+
+  <!-- Google Analytics Events -->
+  <script>
+    function sendGAEvent(category, action, label) {
+      ga('send', {
+        hitType: 'event',
+        eventCategory: category,
+        eventAction: action,
+        eventLabel: label
+      });
+      return true;
+    }
   </script>
 
   <!-- add in event details with javascript -->
