@@ -118,7 +118,7 @@ export default class Index extends React.Component {
               }}>
 
                 <div css={{fontWeight: 'bold'}}>Sunday Morning</div>
-                <div><s>9:00am - Bible Study</s></div>
+                <div>9:00am - Bible Study</div>
                 <div>10:00am - Worship</div>
 
                 <br />
