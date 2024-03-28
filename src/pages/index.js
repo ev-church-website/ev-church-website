@@ -5,6 +5,7 @@ import ScriptureLink from '../shared/ScriptureLink.js';
 import SectionHeading from '../shared/SectionHeading.js';
 import congregation from '../../static/congregation.jpg';
 import Colors from '../styles/Colors';
+import VBSSection from '../content-sections/VBSSection.js';
 import EventsSection from '../content-sections/EventsSection.js';
 import ContactUsSection from '../content-sections/ContactUsSection.js';
 import ClassesSection from '../content-sections/ClassesSection';
@@ -172,6 +173,12 @@ export default class Index extends React.Component {
 
         </div>
 
+
+        <div id="VBS">
+
+          <VBSSection/>
+
+        </div>
 
         <div id="events">
 
