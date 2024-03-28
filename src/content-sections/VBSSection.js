@@ -53,7 +53,7 @@ export default function ClassesSection({ data }) {
         <div css={{textAlign: 'center', margin: 'auto'}}>
 
           <div css={{fontWeight: 'bold'}}>
-          Carnival for the whole family on Friday, June 9th from 3-6pm
+          Carnival for the whole family on Friday, June 7th from 3-6pm
           </div>
 
           Join us for games with prizes, a bounce house, mini golf, face painting, a balloon artist, shaved ice from The Ice Barn, popcorn, hotdogs and more - all FREE!
