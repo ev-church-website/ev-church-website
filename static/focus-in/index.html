@@ -2,11 +2,10 @@
 <html>
 
 <head>
-
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Focus (IN)</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <!-- Open Graph -->
   <meta property="og:title" content="Focus (IN)" />
@@ -22,32 +21,51 @@
   <link rel="shortcut icon" type="image/png" href="content/favicon.png" />
 
   <!-- CSS/Styling -->
-  <link rel="stylesheet" href="content/w3.css">
-  <link rel="stylesheet" href="content/w3-theme-black.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="content/w3.css" />
+  <link rel="stylesheet" href="content/w3-theme-black.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 
   <!-- Scripts -->
   <!-- for smooth scrolling -->
-  <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@14.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@14.0.0/dist/smooth-scroll.polyfills.min.js"></script>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-69196237-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
 
-    gtag('config', 'UA-69196237-1');
+    gtag("config", "UA-69196237-1");
   </script>
 
+  <!-- Google Analytics.js -->
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-69196237-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+  <!-- End Google Analytics.js -->
+
+  <!-- moment.js (https://momentjs.com/) -->
+  <script src="content/moment.js"></script>
 </head>
 
 <body id="myPage">
-
   <!-- Navbar -->
   <div class="w3-top">
     <div class="w3-bar w3-theme-d2 w3-left-align">
-      <a id="menuButton" class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);">
+      <a id="menuButton" class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2"
+        href="javascript:void(0);">
         <i class="fa fa-bars"></i>
       </a>
       <a href="#" class="w3-bar-item w3-button w3-teal">
@@ -74,143 +92,71 @@
   <!-- Image Header -->
   <!-- Div will display relative to base img -->
   <div class="w3-display-container w3-animate-opacity">
-
     <!-- this is the base img (gives div its size)  -->
-    <img src="content/logo.jpg" alt="Focus (IN) Logo" style="width:100%;min-height:350px;max-height:600px;position: relative;top: 0;left: 0;">
+    <img src="content/logo.jpg" alt="Focus (IN) Logo"
+      style="width:100%;min-height:350px;max-height:600px;position: relative;top: 0;left: 0;" />
 
     <!-- This is the overlay img, it will display in the middle of its parent -->
-    <img src="content/logo_text.png" alt="Focus (IN) Logo Text" style="width:100%;max-height: 600px;position: absolute;margin: auto;top: 0;left: 0;bottom: 0;right: 0;">
-
+    <img src="content/logo_text.png" alt="Focus (IN) Logo Text"
+      style="width:100%;max-height: 600px;position: absolute;margin: auto;top: 0;left: 0;bottom: 0;right: 0;" />
   </div>
 
   <!-- About Row -->
   <div class="w3-row w3-padding-64 w3-theme-l1 w3-padding-bottom-none" id="about">
-
     <!-- About Info -->
     <div class="w3-padding w3-padding-bottom-none">
       <h2>Mission</h2>
       <p>
-        Our mission is to unite Christian young adults across Indiana in our focus on Christ. We will do this by studying the Word
-        of God together and creating fellowship opportunities throughout the year.
+        Our mission is to unite Christian young adults (18+) across Indiana in our
+        focus on Christ. We will do this by studying the Word of God together
+        and creating fellowship opportunities throughout the year.
       </p>
       <p>
-        If you’ve been longing for relationships with other young Christians, we hope that you will join us at these Focus (IN) events.
-        We’re praying that this endeavor will spark new opportunities for God’s people in Indiana to be unified in spirit,
-        "[stirring] up one another to love and good works... encouraging one another, and all the more as [we] see the Day
-        drawing near". Hebrews 10:24-25 (ESV)
-      </p>
-      <p>
-        ALL events hosted by Eagle Valley (including the Focus (IN) events) are free and open to the public.
+        If you’ve been longing for relationships with other young Christians,
+        we hope that you will join us at these Focus (IN) events. We’re
+        praying that this endeavor will spark new opportunities for God’s
+        people in Indiana to be unified in spirit, "[stirring] up one another
+        to love and good works... encouraging one another, and all the more as
+        [we] see the Day drawing near" Hebrews 10:24-25 (ESV).
       </p>
     </div>
   </div>
 
   <!-- Event Row -->
-  <div class="w3-cell-row w3-row-padding w3-padding-64 w3-theme-l1" id="events">
-
-    <!-- Event Info -->
-    <div class="w3-cell w3-padding w3-mobile w3-container" style="width: 50%">
-      <div class="w3-card w3-white w3-padding-16 w3-padding-top-none">
-        <img src="content/MarchConference.jpg" alt="March Conference" style="width:100%">
-        <div class="w3-container">
-          <h3>March Conference</h3>
-          <h4 style="font-style: italic">Focus (IN) Conference</h4>
-          <p>March 30th registration starting at 9 AM</p>
-          <p>Topic: Rejoicing in God’s Providence</p>
-          <p>Coffee Bar and homemade lunch provided.</p>
-          <p>
-            <a href="#conference">More details below...</a>
-          </p>
-          <div class="w3-center">
-            <a href="#contact">
-              <button class="w3-button w3-teal w3-padding-large">RSVP</button>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-
+  <div class="w3-cell-row w3-row-padding w3-padding-64 w3-theme-l1 w3-padding-bottom-none" id="events">
+    <!-- Event Info (in js script at end of file) -->
+  </div>
+  <div class="w3-padding-64 w3-display-container w3-theme-l1">
+    <a href="https://calendar.google.com/calendar/b/0/r?cid=YmtwbGw0bjNoYm05NGtpbXBidHA4YW00aWdAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ"
+      onclick="return sendGAEvent('Calendar', 'Subscribe', 'Subscribed to Focus(IN) Calendar');">
+      <button class="w3-display-middle w3-button w3-teal w3-padding-large">
+        <i class="fa fa-calendar-plus-o"></i>
+        Add Events to Google Calendar
+      </button>
+    </a>
   </div>
 
   <!-- Conference/Speaker Container -->
-  <div class="w3-container w3-padding-64 w3-center" id="conference">
-
-    <!-- Conference Info -->
-    <h2 class="w3-left-align">Focus (IN) March Conference</h2>
-    <p class="w3-left-align">
-      Eagle Valley Church of Christ is SO excited to announce our new conference for young adults in Indiana. The focus of the
-      conference this year is "Rejoicing in God’s Providence". We will be diving deep into God’s Word during keynote presentations,
-      discussion groups, and a workshop, as well as worshipping Him through prayer, song, and fellowship.
-    </p>
-    <p class="w3-left-align">
-      We’ll start the day with a Coffee Bar and Registration from 9-10 AM. Our worship and study will begin at 10 AM and end around
-      3 PM, with a break for lunch made by the members of the congregation around noon.
-    </p>
-    <p class="w3-left-align">
-      Our prayer is that this conference will be more than just an event. We pray that God will use this event to spark hope, ideas,
-      and opportunities for Christians throughout the state to work together in His Kingdom.
-    </p>
-    <p class="w3-left-align">
-      If you have any questions about the conference, please
-      <a href="#contact">contact us</a> using the form below. If you plan to attend any of the events, we’d appreciate an
-      <a href="#contact">RSVP</a>, so we can plan for plenty of food.
-    </p>
-
-    <!--Speakers-->
-    <div class="w3-row w3-padding-32">
-      <h3 class="w3-left-align w3-padding">Keynote Speakers</h3>
-      <div class="w3-padding-large w3-margin w3-container w3-card-dark w3-theme-l5">
-        <img src="./content/Speaker_Addison.jpg" alt="Addison" style="width:45%;max-width: 250px" class="w3-circle">
-        <h3>Addison Alexander</h3>
-        <div class="w3-left-align">
-          <p>Addison Alexander grew up in Glasgow, Kentucky, where he lived until 2009. After graduating from the University of
-            Kentucky in 2013 with a BS in Mechanical Engineering, he continued his education at Purdue University in West Lafayette,
-            Indiana. In 2018, he graduated from Purdue with a Ph.D. in Mechanical Engineering. Earlier this year, he moved
-            to Indianapolis, where he now works as a project engineer for Allison Transmission, Inc.</p>
-          <p>During his time in graduate school, Addison was involved at the Elmwood Church of Christ in Lafayette, Indiana. He
-            has been heavily involved in their adult education ministry by teaching many classes and leading small groups. He
-            also volunteers consistently with their thriving food pantry ministry, and he spearheaded a significant expansion
-            of that ministry’s facilities in Fall 2016. He has also led the Elmwood Young Professionals ministry, which is
-            geared toward young adults in their early twenties.</p>
-          <p>Addison also enjoys serving in other ways, from being a camp counselor at church camps to assisting building and
-            maintenance work. In his free time, he enjoys reading, watching sitcoms and science fiction shows, tinkering and
-            fixing things, and spending time with his amazing girlfriend Stephanie.</p>
-        </div>
-      </div>
-
-      <!-- Spacer -->
-      <p class="w3-padding"></p>
-
-      <div class="w3-padding-large w3-margin w3-container w3-card-dark w3-theme-l5">
-        <img src="./content/Speaker_Justin_Square.jpg" alt="Justin" style="width:45%;max-width: 250px" class="w3-circle">
-        <h3>Justin Hastie</h3>
-        <div class="w3-left-align">
-          <p>Justin Hastie was born and raised on a small cattle farm near Cave-in-Rock, IL where he now resides with his wife
-            Dena and their three children.</p>
-          <p>He is a Licensed Professional Engineer in the state of Illinois. Furthermore, he holds an MBA in Finance from the
-            Kelley School of Business and a BS in Mechanical Engineering from the University of Kentucky.</p>
-          <p>Over the past 18 years, Justin has preached for various congregations in Kentucky, Illinois, and Indiana. For the
-            past 10 years he has directed the youth program for the Hardin County Church of Christ in Elizabethtown, IL and
-            has preached there for the past 2 years. Previously, Justin preached 6 years for the Houser Grove Church of Christ
-            in Boaz, KY.</p>
-          <p>In addition to preaching and teaching, he is employed part time as the County Engineer for Hardin County, IL. He
-            is also an entrepreneur who operates a small forestry services business and provides consulting for the mining
-            industry.
-          </p>
-        </div>
-      </div>
-
+  <!-- Banner Image -->
+  <img src="content/God is in Control - Banner.jpg"
+    style="width: 100%; max-height: 500px; object-fit: contain; background: black;" id="conference" />
+  <div class="w3-container w3-padding-64 w3-center w3-padding-top-none w3-padding-bottom-none">
+    <div class="w3-container w3-padding-64 w3-center w3-padding-top-none w3-padding-bottom-none">
+      <!-- Conference Info -->
+      <h2>Focus (IN) April 2022 Conference - Thanks for Coming!</h2>
+      <p>Thank you for coming to our April Conference and making it such a huge success!</p>
+      <p>If you would like to stay up to date with the events we are currently planning,
+        then please join our
+        <a href="#contact">Mailing List</a>!
+      </p>
     </div>
-
   </div>
 
   <!-- Location/Contact Container -->
   <div class="w3-container w3-theme-l5 w3-padding">
     <div class="w3-row">
-
       <!-- Location/Address Info -->
       <div class="w3-col m5 w3-padding-64 w3-padding w3-padding-bottom-none" id="location">
-
         <div class="w3-padding-16">
           <span class="w3-xlarge w3-border-teal w3-bottombar">Location</span>
         </div>
@@ -221,15 +167,10 @@
               <i class="fa fa-map-marker w3-text-teal w3-xlarge"></i>
             </td>
             <td>
-              <a href="https://goo.gl/maps/pCbgdcA5Z4p" target="_blank">8465 Crawfordsville Rd, Indianapolis, IN 46234</a>
+              <a href="https://goo.gl/maps/pCbgdcA5Z4p" target="_blank">8465 Crawfordsville Rd, Indianapolis, IN
+                46234</a>
             </td>
           </tr>
-          <!-- <tr>
-            <td class="w3-padding-small">
-              <i class="fa fa-phone w3-text-teal w3-xlarge"></i>
-            </td>
-            <td>(555)-555-5555</td>
-          </tr> -->
           <tr>
             <td class="w3-padding-small">
               <i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i>
@@ -241,71 +182,88 @@
         </table>
 
         <!-- Google Map -->
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12259.31535294724!2d-86.3116469!3d39.810831!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x64efa476da220592!2sEagle+Valley+Church+of+Christ!5e0!3m2!1sen!2sus!4v1544811908274"
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12259.31535294724!2d-86.3116469!3d39.810831!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x64efa476da220592!2sEagle+Valley+Church+of+Christ!5e0!3m2!1sen!2sus!4v1544811908274"
           width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-
       </div>
 
-      <!-- Contact/RSVP Form -->
+      <!-- Contact Form -->
       <div id="contact" class="w3-col m7 w3-padding-64 w3-padding">
-
         <div class="w3-padding-16">
-          <span class="w3-xlarge w3-border-teal w3-bottombar">Contact Us / RSVP</span>
+          <span class="w3-xlarge w3-border-teal w3-bottombar">Contact Us</span>
         </div>
 
-        <form netlify method="POST" name="rsvp-contact-form" id="rsvp-contact-form" onsubmit="return showSubmission();" class="w3-container w3-card-4 w3-padding-16 w3-white">
-
+        <form netlify method="POST" name="contact-form" id="contact-form" onsubmit="return showSubmission();"
+          class="w3-container w3-card-4 w3-padding-16 w3-white">
           <div class="w3-section">
             <label>Name*</label>
-            <input class="w3-input" type="text" name="Name" placeholder="Name (Required)" required>
+            <input class="w3-input" type="text" name="Name" placeholder="Name (Required)" required />
           </div>
 
           <div class="w3-section">
             <label>Email*</label>
-            <input class="w3-input" type="email" name="Email" placeholder="Email (Required)" required>
+            <input class="w3-input" type="email" name="Email" placeholder="Email (Required)" required />
           </div>
 
           <div class="w3-section">
             <label>Congregation</label>
-            <input class="w3-input" type="text" name="Congregation" placeholder="Congregation (Optional)">
+            <input class="w3-input" type="text" name="Congregation" placeholder="Congregation (Optional)" />
           </div>
 
-          <div class="w3-section">
+          <!-- Event RSVP -->
+          <div id="EventRSVPSection" class="w3-section">
             <p>Please check the events you plan to attend:</p>
-            <input class="w3-check" type="checkbox" name="MarchConference">
-            <label>March Conference - 30th registration starts at 9 AM</label>
-            <br>
+            <span id="EventRSVP"></span>
+          </div>
+
+          <!-- Email Updates Signup -->
+          <div class="w3-section">
+            <p>
+              Would you like to recieve updates about future Focus (IN) events
+              by email?
+            </p>
+            <input class="w3-radio" type="radio" name="EmailSignup" value="yes" checked />
+            <label>Yes! I would love to get updates by email!</label>
+            <br />
+            <input class="w3-radio" type="radio" name="EmailSignup" value="no" />
+            <label>No, I do not wish to get updates by email</label>
+            <br />
           </div>
 
           <div class="w3-section">
             <label>Question/Comment</label>
-            <textarea class="w3-input" name="Message" cols="40" rows="6" placeholder="Please enter your question or comment here... (Optional)"></textarea>
+            <textarea class="w3-input" name="Message" cols="40" rows="6"
+              placeholder="Please enter your question or comment here... (Optional)"></textarea>
           </div>
 
-          <button type="submit" class="w3-button w3-right w3-theme">Send</button>
-          <button type="reset" class="w3-button w3-right w3-theme w3-margin-right">Reset</button>
-          <p id="formSubmit" style="display: none">Please wait... (If the form does not submit, then please send us an email or give us a call)</p>
-
+          <button type="submit" class="w3-button w3-right w3-theme">
+            Send
+          </button>
+          <button type="reset" class="w3-button w3-right w3-theme w3-margin-right">
+            Reset
+          </button>
+          <p id="formSubmit" style="display: none">
+            Please wait... (If the form does not submit, then please send us
+            an email)
+          </p>
         </form>
 
         <!--handle form submission (show wait element)-->
         <script>
           function showSubmission() {
-            document.getElementById('formSubmit').style.display = 'block';
+            document.getElementById("formSubmit").style.display = "block";
           }
         </script>
-
       </div>
-
     </div>
   </div>
 
   <!-- Footer -->
   <footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
-
     <!-- Facebook Link -->
-    <h4>Join the Facebook Event</h4>
-    <a class="w3-button w3-large w3-teal" href="https://www.facebook.com/events/379074032686674" title="Facebook" target="_blank">
+    <h4>Join our Facebook Group</h4>
+    <a class="w3-button w3-large w3-teal" href="https://www.facebook.com/groups/1331931766943577" title="Facebook"
+      target="_blank">
       <i class="fa fa-facebook"></i>
     </a>
 
@@ -321,50 +279,234 @@
         </span>
       </a>
     </div>
-
   </footer>
 
   <!-- Small Screen Navigation Script -->
   <script>
-
     // Used to toggle the menu on smaller screens when clicking on the menu button
     // It will dismiss the menu if target was not menu button
     function openNav(ev) {
-
       var target = ev.target;
       var menuButton = document.getElementById("menuButton");
       var navDemo = document.getElementById("navDemo");
 
       //if the menu is not currently being shown...
       if (navDemo.className.indexOf("w3-show") == -1) {
-
         //...and if the target was the menu button, or the target's parent was the menu button...
         if (target == menuButton || target.parentElement == menuButton) {
-
           //...then show the menu
           navDemo.className += " w3-show";
-
         }
-
       }
 
       //else the menu was shown, hide the menu
       else {
         navDemo.className = navDemo.className.replace(" w3-show", "");
       }
-
     }
 
-    //add click event listener to dom to toggle menu display (for smaller screens)
+    //add click event listener to DOM to toggle menu display (for smaller screens)
     document.addEventListener("click", openNav);
-
   </script>
 
-  <!--intialize smooth scroll-->
+  <!--initialize smooth scroll-->
   <script>
     var scroll = new SmoothScroll('a[href*="#"]');
   </script>
 
+  <!-- Google Analytics Events -->
+  <script>
+    function sendGAEvent(category, action, label) {
+      ga('send', {
+        hitType: 'event',
+        eventCategory: category,
+        eventAction: action,
+        eventLabel: label
+      });
+      return true;
+    }
+  </script>
+
+  <!-- add in event details with javascript -->
+  <script>
+
+    // Events helper functions to help parse return events from Google Calendar API call
+
+    function getEndTime(event) {
+      let date = event.end.date || event.end.dateTime
+      let dateMoment = moment(date)
+
+      // we need to subtract a day from all day events since Google returns the end date of an all day event as the next date
+      // for example, if a single all day event started on Jan 1 and ended on Jan 2, then Google would return an end date of Jan 3
+      if (allDayEvent(event)) {
+        dateMoment.subtract(1, 'day')
+      }
+
+      return dateMoment
+    }
+
+    function getStartTime(event) {
+      let date = event.start.date || event.start.dateTime
+      return moment(date)
+    }
+
+    function getTitle(event) {
+      return event.summary
+    }
+
+    function getDescription(event) {
+      return event.description
+    }
+
+    function allDayEvent(event) {
+      return event.end.date !== undefined
+    }
+
+    function getShortDescription(event) {
+      let shortDescription = getDescription(event)
+
+      // if the event has a description, include it
+      // google calendar requires links to be a URL so if we want a link to a section on our site
+      // then we need to prefix it as an actual URL then remove it before we show it on a page
+      // if we have a custom link (starts with http://myLink.), then remove the prefix
+      if (shortDescription) {
+        return shortDescription.toString().replace('http://myLink.', '');
+      }
+      return ""
+    }
+
+    function getImageURL(event) {
+      let eventAttachments = event.attachments
+      if (eventAttachments) {
+        return 'https://drive.google.com/uc?export=view&id=' + eventAttachments[0].fileId
+      }
+      return false;
+    }
+
+    //Takes in the img url to show, the title of the event,
+    //the total amount of events to display (used to calculate event width),
+    //a boolean to decide whether or not to display the event on the site (if false, just show it in RSVP section)
+    //and any Event details (HTML markup supported). Then creates an event and adds it to the event section
+    //of the page while also adding its rsvp info to the contact form on the page
+    function createEvent(
+      imgSrc,
+      eventTitle,
+      totalEvents,
+      showEvent,
+      eventDetails
+    ) {
+      //if total events is 1 or less, then set it to 2
+      //so that the width of the eventContainer will be 50%
+      if (totalEvents <= 1) {
+        totalEvents = 2;
+      }
+      //scale total events to a percentage
+      totalEvents = 100 / totalEvents;
+      //if showEvent is false, then skip event creation
+      if (showEvent) {
+        if (!imgSrc) {
+          imgSrc = 'content/Save the dates.jpg'
+        }
+        if (!eventDetails) {
+          eventDetails = 'More Details coming soon! RSVP to get notified of any updates.'
+        }
+        //creating the event element
+        var event = document.createElement("div");
+        event.className = `w3-card w3-white w3-padding-16 w3-padding-top-none`;
+        event.innerHTML = `
+          <img src="${imgSrc}" alt="${eventTitle}" style="width:100%">
+          <div class="w3-container">
+            <h4 style="font-style: italic">${eventTitle}</h4>
+            ${eventDetails}
+            <div class="w3-center">
+              <a href="#contact">
+                <button class="w3-button w3-teal w3-padding-large">RSVP</button>
+              </a>
+            </div>
+          </div>
+      `;
+        var eventContainer = document.createElement("div");
+        eventContainer.className = `w3-cell w3-padding w3-mobile w3-container`;
+        eventContainer.style = `width: ${totalEvents}%`;
+        //adding the event element to the page
+        eventContainer.appendChild(event);
+        document.getElementById("events").appendChild(eventContainer);
+      }
+
+      //creating then adding the event rsvp info to the contact form
+      var eventRSVP = document.createElement("span");
+      eventRSVP.innerHTML = `
+        <input class="w3-check" type="checkbox" name="${eventTitle}">
+        <label>${eventTitle}</label>
+        <br>
+      `;
+      document.getElementById("EventRSVP").appendChild(eventRSVP);
+    }
+
+    // getting events from public Google Calendar
+    // value of 1 indicates 1 month from the current date (ex: Jan 5 - Feb 5)
+    // 2 would be 2 months from the current date (ex Jan 5 - Mar 5), etc...
+    // A value of zero should not be used as that would, in theory, just get events for the current day
+    const MONTHS_FROM_NOW = 2
+
+    let now = moment()
+    let nowAccountedForFutureMonths = moment().add(MONTHS_FROM_NOW, 'months')
+
+    //for more info on google calendar api visit https://developers.google.com/calendar/v3/reference/events/list 
+    //NOTE: Since we are using an api key, you need to append ?key=API_KEY, to the end of the GET HTTP request
+    const API_KEY = 'AIzaSyCRaaVrCuYAnOsW5wcdVDV8GUFgasLnK7o'
+    const CALENDAR_ID = 'bkpll4n3hbm94kimpbtp8am4ig@group.calendar.google.com'
+    let calendar_api_url = `https://www.googleapis.com/calendar/v3/calendars/${CALENDAR_ID}/events?key=${API_KEY}`
+
+    //only show events with end times after today
+    calendar_api_url += `&timeMin=${now.toISOString()}`
+
+    //only show events with start times within the next MONTHS_FROM_NOW
+    // calendar_api_url += `&timeMax=${nowAccountedForFutureMonths.toISOString()}`
+
+    // count each recurring event as its own separate instance
+    calendar_api_url += `&singleEvents=true`
+
+    // getting the results in the current time zone of client NOTE: this does not seem to work on all day events
+    calendar_api_url += `&timeZone=${Intl.DateTimeFormat().resolvedOptions().timeZone}`
+
+    fetch(calendar_api_url)
+      .then(response => response.json()) // parse JSON from request
+      .then(
+        (result) => {
+          let events = result.items;
+          if (events === undefined) {
+            console.error("Events was undefined");
+            return;
+          }
+          events.sort((a, b) => { return getStartTime(a).subtract(getStartTime(b)) });
+          for (let index = 0; index < events.length; index++) {
+            const event = events[index];
+            //creating Events (imgSrc, Event Title, totalEvents, showEvent, Event Details (HTML))
+            createEvent(getImageURL(event), `${getTitle(event)} - ${getStartTime(event).format('MMMM D')}`, events.length, true, getShortDescription(event));
+          }
+        },
+        (error) => {
+          console.error(error);
+        }
+      )
+      .then(
+        () => {
+          //Clean out Event RSVP Section and add a default Coming Soon notification if there are not any events
+          if (document.getElementById("EventRSVP").innerHTML == "") {
+            createEvent(
+              "content/Coming-Soon.jpg",
+              "More Events Coming Soon!",
+              1,
+              true,
+              "<p>There are currently no events planned. But, not to worry, we are in the process of creating more soon! Fill out the contact form below to get notified as soon as we do.</p>"
+            );
+            document.getElementById("EventRSVPSection").innerHTML = "";
+          }
+        }
+      )
+
+  </script>
 </body>
 
 </html>

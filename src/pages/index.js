@@ -114,7 +114,7 @@ export default class Index extends React.Component {
                 fontSize: '1.25rem',
                 margin: '1rem auto',
                 textAlign: 'center',
-                maxWidth: '200px'
+                maxWidth: '300px'
               }}>
 
                 <div css={{fontWeight: 'bold'}}>Sunday Morning</div>
@@ -128,6 +128,11 @@ export default class Index extends React.Component {
 
                 <br />
 
+                <div css={{fontWeight: 'bold'}}>Wednesday Morning</div>
+                <div>10:30am - Ladies Bible Study</div>
+
+                <br />
+                
                 <div css={{fontWeight: 'bold'}}>Wednesday Evening</div>
                 <div>7:00pm - Bible Study</div>
 
@@ -170,7 +175,7 @@ export default class Index extends React.Component {
 
         <div id="events">
 
-          <EventsSection data={this.props.data.allEventsJson.edges.map(edge => edge.node)}/>
+          <EventsSection/>
 
         </div>
 
@@ -186,22 +191,3 @@ export default class Index extends React.Component {
 
   }
 }
-
-
-//TODO: break this up?
-export const query = graphql`
-  query AllDataQuery {
-  
-    allEventsJson(sort: {fields: [date]}) {
-      edges {
-        node {
-          title
-          date
-          description
-        }
-      }
-    }
-    
-    
-  }
-`;

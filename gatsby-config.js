@@ -13,13 +13,6 @@ module.exports = {
         trackingId: 'UA-69196237-1'
       }
     },
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        name: 'data',
-        path: `${__dirname}/data/`,
-      }
-    },
     'gatsby-transformer-json',
     'gatsby-plugin-netlify-cms',
   ],
