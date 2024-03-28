@@ -5,6 +5,7 @@ import ScriptureLink from '../shared/ScriptureLink.js';
 import SectionHeading from '../shared/SectionHeading.js';
 import congregation from '../../static/congregation.jpg';
 import Colors from '../styles/Colors';
+import VBSSection from '../content-sections/VBSSection.js';
 import EventsSection from '../content-sections/EventsSection.js';
 import ContactUsSection from '../content-sections/ContactUsSection.js';
 import ClassesSection from '../content-sections/ClassesSection';
@@ -26,24 +27,6 @@ export default class Index extends React.Component {
             <img css={{marginBottom: 0, width:'100%'}} src={congregation} />
 
           </div>
-
-        </div>
-
-        <div css={{
-          display: 'none',
-          [Media.phone]: {
-            backgroundColor: Colors.grayBackground,
-            display: 'flex',
-            justifyContent: 'center',
-            padding: '1rem',
-            position: 'relative',
-            top: -10,
-          }
-        }}>
-
-          <a href="/focus-in" css={{color: Colors.linkBlue}}>
-            Learn about the Focus (IN) Conference
-          </a>
 
         </div>
 
@@ -172,6 +155,12 @@ export default class Index extends React.Component {
 
         </div>
 
+
+        <div id="VBS">
+
+          <VBSSection/>
+
+        </div>
 
         <div id="events">
 
