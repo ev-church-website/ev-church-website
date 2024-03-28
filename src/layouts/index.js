@@ -67,6 +67,10 @@ export default ({ children }) =>
             MISSIONS
           </HeaderLink>
 
+          <HeaderLink to="#VBS">
+            VBS
+          </HeaderLink>
+
           <HeaderLink to="#events">
             EVENTS
           </HeaderLink>
