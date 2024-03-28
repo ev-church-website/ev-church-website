@@ -30,24 +30,6 @@ export default class Index extends React.Component {
 
         </div>
 
-        <div css={{
-          display: 'none',
-          [Media.phone]: {
-            backgroundColor: Colors.grayBackground,
-            display: 'flex',
-            justifyContent: 'center',
-            padding: '1rem',
-            position: 'relative',
-            top: -10,
-          }
-        }}>
-
-          <a href="/focus-in" css={{color: Colors.linkBlue}}>
-            Learn about the Focus (IN) Conference
-          </a>
-
-        </div>
-
         <div id="about">
 
           <SectionHeading>ABOUT US</SectionHeading>
