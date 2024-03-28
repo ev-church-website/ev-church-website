@@ -59,6 +59,9 @@ export default function ClassesSection({ data }) {
           Join us for games with prizes, a bounce house, mini golf, face painting, a balloon artist, shaved ice from The Ice Barn, popcorn, hotdogs and more - all FREE!
 
         </div>
+
+        <br />
+
         <form
           action="https://sites.google.com/view/eagle-valley-vbs"
           css={{
