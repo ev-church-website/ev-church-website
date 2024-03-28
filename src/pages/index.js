@@ -30,6 +30,22 @@ export default class Index extends React.Component {
 
         </div>
 
+        <div css={{
+          display: 'none',
+          backgroundColor: Colors.grayBackground,
+          display: 'flex',
+          justifyContent: 'center',
+          padding: '1rem',
+          position: 'relative',
+          top: -10
+        }}>
+
+          <a href="https://sites.google.com/view/eagle-valley-vbs" css={{color: Colors.linkBlue}}>
+            Register for the 2024 VBS Day Camp
+          </a>
+
+        </div>
+
         <div id="about">
 
           <SectionHeading>ABOUT US</SectionHeading>
@@ -76,8 +92,13 @@ export default class Index extends React.Component {
 
         </div>
 
+        <div id="VBS" css={{backgroundColor: Colors.grayBackground}}>
+
+          <VBSSection/>
+
+        </div>
+
         <div css={{
-          backgroundColor: Colors.grayBackground,
           marginTop: '3rem'
         }}>
 
@@ -143,32 +164,25 @@ export default class Index extends React.Component {
 
         </div>
 
-        <div id="classes">
+        <div id="classes" css={{backgroundColor: Colors.grayBackground}}>
 
           <ClassesSection/>
 
         </div>
 
-        <div id="missions" css={{backgroundColor: Colors.grayBackground}}>
+        <div id="missions">
 
           <MissionsSection/>
 
         </div>
 
-
-        <div id="VBS">
-
-          <VBSSection/>
-
-        </div>
-
-        <div id="events">
+        <div id="events" css={{backgroundColor: Colors.grayBackground}}>
 
           <EventsSection/>
 
         </div>
 
-        <div id="contact" css={{backgroundColor: Colors.grayBackground}}>
+        <div id="contact">
 
           <ContactUsSection />
 
