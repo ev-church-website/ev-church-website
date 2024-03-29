@@ -37,6 +37,7 @@ export default class Index extends React.Component {
           justifyContent: 'center',
           padding: '1rem',
           position: 'relative',
+          fontSize: '1.75rem',
           top: -10
         }}>
 
