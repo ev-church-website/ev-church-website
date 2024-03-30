@@ -38,6 +38,7 @@ export default class Index extends React.Component {
           padding: '1rem',
           position: 'relative',
           fontSize: '1.75rem',
+          textAlign: 'center',
           top: -10
         }}>
 
