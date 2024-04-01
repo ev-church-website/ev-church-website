@@ -59,6 +59,10 @@ export default ({ children }) =>
             ABOUT
           </HeaderLink>
 
+          <HeaderLink to="#VBS">
+            VBS DAY CAMP
+          </HeaderLink>
+
           <HeaderLink to="#classes">
             CLASSES
           </HeaderLink>
@@ -73,10 +77,6 @@ export default ({ children }) =>
 
           <HeaderLink to="#contact">
             CONTACT
-          </HeaderLink>
-
-          <HeaderLink to="/focus-in">
-            FOCUS (IN)
           </HeaderLink>
 
         </div>

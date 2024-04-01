@@ -5,6 +5,7 @@ import ScriptureLink from '../shared/ScriptureLink.js';
 import SectionHeading from '../shared/SectionHeading.js';
 import congregation from '../../static/congregation.jpg';
 import Colors from '../styles/Colors';
+import VBSSection from '../content-sections/VBSSection.js';
 import EventsSection from '../content-sections/EventsSection.js';
 import ContactUsSection from '../content-sections/ContactUsSection.js';
 import ClassesSection from '../content-sections/ClassesSection';
@@ -31,18 +32,18 @@ export default class Index extends React.Component {
 
         <div css={{
           display: 'none',
-          [Media.phone]: {
-            backgroundColor: Colors.grayBackground,
-            display: 'flex',
-            justifyContent: 'center',
-            padding: '1rem',
-            position: 'relative',
-            top: -10,
-          }
+          backgroundColor: Colors.grayBackground,
+          display: 'flex',
+          justifyContent: 'center',
+          padding: '1rem',
+          position: 'relative',
+          fontSize: '1.75rem',
+          textAlign: 'center',
+          top: -10
         }}>
 
-          <a href="/focus-in" css={{color: Colors.linkBlue}}>
-            Learn about the Focus (IN) Conference
+          <a href="https://sites.google.com/view/eagle-valley-vbs" css={{color: Colors.linkBlue}}>
+            Register for the 2024 VBS Day Camp
           </a>
 
         </div>
@@ -93,8 +94,13 @@ export default class Index extends React.Component {
 
         </div>
 
+        <div id="VBS" css={{backgroundColor: Colors.grayBackground}}>
+
+          <VBSSection/>
+
+        </div>
+
         <div css={{
-          backgroundColor: Colors.grayBackground,
           marginTop: '3rem'
         }}>
 
@@ -160,26 +166,25 @@ export default class Index extends React.Component {
 
         </div>
 
-        <div id="classes">
+        <div id="classes" css={{backgroundColor: Colors.grayBackground}}>
 
           <ClassesSection/>
 
         </div>
 
-        <div id="missions" css={{backgroundColor: Colors.grayBackground}}>
+        <div id="missions">
 
           <MissionsSection/>
 
         </div>
 
-
-        <div id="events">
+        <div id="events" css={{backgroundColor: Colors.grayBackground}}>
 
           <EventsSection/>
 
         </div>
 
-        <div id="contact" css={{backgroundColor: Colors.grayBackground}}>
+        <div id="contact">
 
           <ContactUsSection />
 
