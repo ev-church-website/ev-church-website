@@ -59,10 +59,6 @@ export default ({ children }) =>
             ABOUT
           </HeaderLink>
 
-          <HeaderLink to="#VBS">
-            VBS DAY CAMP
-          </HeaderLink>
-
           <HeaderLink to="#classes">
             CLASSES
           </HeaderLink>
