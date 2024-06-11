@@ -26,7 +26,7 @@ export default function MissionsSection({ data }) {
         </div>
 
         <Tile width="50%">
-          <a href="http://www.mnch.info/" target="_blank" className={`${BaseClasses.link}`}>
+          <a href="https://www.mnch.org/" target="_blank" className={`${BaseClasses.link}`}>
             Manuelito Navajo Children’s Home
           </a>
           <br />
@@ -34,7 +34,7 @@ export default function MissionsSection({ data }) {
         </Tile>
 
         <Tile width="50%">
-          <a href="https://www.shultslewis.org" target="_blank" className={`${BaseClasses.link}`}>
+          <a href="https://www.shultslewis.org/" target="_blank" className={`${BaseClasses.link}`}>
             Shults-Lewis Child and Family Services
           </a>
           <br />
@@ -42,7 +42,7 @@ export default function MissionsSection({ data }) {
         </Tile>
 
         <Tile width="50%">
-          <a href="http://disasterreliefeffort.org/" target="_blank" className={`${BaseClasses.link}`}>
+          <a href="https://disasterreliefeffort.org/" target="_blank" className={`${BaseClasses.link}`}>
             Churches of Christ Disaster Relief Effort
           </a>
           <br />
@@ -50,7 +50,7 @@ export default function MissionsSection({ data }) {
         </Tile>
 
         <Tile width="50%">
-          <a href="http://www.housetohouse.com/" target="_blank" className={`${BaseClasses.link}`}>
+          <a href="https://www.housetohouse.com/" target="_blank" className={`${BaseClasses.link}`}>
             House to House Heart to Heart
           </a>
           <br />
