@@ -2,3 +2,13 @@
   from = "/brevo-signup"
   to = "https://4a990c74.sibforms.com/serve/MUIFAMMS781MqiVdXO8SOHcWpD1lKuj3wsaw_KH9kDV65yxnP97U3AakbkaW8dpYNrKEwQcx9_RLOuhTx2DTbR5l3wkC0Y465wvEKDXZW7hfPaRCbeDNx-do1Jj8KYUIsiMADBZrKl5INL42G2ItwU4Xb4qIV0pKAVOWbnQyt6UfyjPRU4Hnfr6u5xvNqniXyll1Z3GpahONz5bT"
   status = 200
+
+[[redirects]]
+  from = "/VBS"
+  to = "https://sites.google.com/view/eagle-valley-vbs"
+  status = 302
+
+[[redirects]]
+  from = "/vbs"
+  to = "https://sites.google.com/view/eagle-valley-vbs"
+  status = 302
