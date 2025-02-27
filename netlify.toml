@@ -4,11 +4,6 @@
   status = 200
 
 [[redirects]]
-  from = "/VBS"
-  to = "https://sites.google.com/view/eagle-valley-vbs"
-  status = 302
-
-[[redirects]]
   from = "/vbs"
   to = "https://sites.google.com/view/eagle-valley-vbs"
-  status = 302
+  status = 200
