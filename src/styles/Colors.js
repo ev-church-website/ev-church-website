@@ -4,7 +4,7 @@ export default {
   white: '#fff',
   grayBackground: '#eee',
 
-  primaryBackground: '#8a9eab',
+  primaryBackground: '#2d5a79',
 
   linkBlue: '#36b',
 
