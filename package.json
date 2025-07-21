@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "dateformat": "^3.0.3",
-    "gatsby": "^1.9.225",
+    "gatsby": "^5.14.5",
     "gatsby-link": "^1.6.38",
     "gatsby-plugin-glamor": "^1.6.13",
     "gatsby-plugin-google-analytics": "^1.0.20",
