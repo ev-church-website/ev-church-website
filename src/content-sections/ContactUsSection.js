@@ -22,7 +22,7 @@ export default class ContactUsSection extends React.Component {
         <SectionHeading>CONTACT US</SectionHeading>
 
         <form
-          action="https://formspree.io/evchurchwebsite@gmail.com"
+          action="https://formspree.io/f/xqaydber"
           method="post"
           css={{
             display: 'flex',
